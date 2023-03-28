@@ -1,6 +1,89 @@
-<html>
-  <head></head>
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sétáló Budapest</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .background-image {
+            background-image: url('./main-header-bg.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            background-attachment: fixed;
+            height: 100%; /* vh; /* set the height to the full viewport height */
+            width: 100%;
+        }
+        .logo {
+            background-image: url('./setalobudapest-logo.svg');
+            background-size: cover;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 5%;
+            left: 5%;
+            width: 110px;
+            height: 132px;
+        }
+        .content-grid {
+            display: grid;
+            place-items: center;
+            height: 100%;
+        }
+        .content {
+            background-color: rgba(255,255,255,.8);
+            padding: 1.7rem;
+        }
+        h2 {
+            text-align: center;
+            font-family: system-ui;
+            color: firebrick;
+            font-size: 2rem;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button {
+            width: 180px;
+            background-color: firebrick;
+            margin: 1rem;
+            text-align: center;
+            padding: 1.3rem;
+            font-family: sans-serif;
+            font-size: 1.3rem;
+            color: white;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: crimson;
+        }
+
+    </style>
+  </head>
   <body>
-    <p>Test</p>
+    <div class="logo"></div>
+    <div class="background-image">
+        <div class="content-grid">
+            <div class="content">
+                <h2>Program</h2>
+                <div class="buttons">
+                    <div class="button">
+                        Letöltés
+                    </div>
+                    <div class="button">
+                        Online verzió
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
