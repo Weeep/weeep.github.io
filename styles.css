@@ -85,7 +85,6 @@ body, h1, h2, h3, ul, p {
 
 /* Styling for the main content */
 .main-content {
-    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
