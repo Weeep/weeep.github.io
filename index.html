@@ -1,89 +1,53 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sétáló Budapest</title>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        .background-image {
-            background-image: url('./main-header-bg.jpg');
-            background-size: cover;
-            background-position: center bottom;
-            background-attachment: fixed;
-            height: 100%; /* vh; /* set the height to the full viewport height */
-            width: 100%;
-        }
-        .logo {
-            background-image: url('./setalobudapest-logo.svg');
-            background-size: cover;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: fixed;
-            top: 5%;
-            left: 5%;
-            width: 110px;
-            height: 132px;
-        }
-        .content-grid {
-            display: grid;
-            place-items: center;
-            height: 100%;
-        }
-        .content {
-            background-color: rgba(255,255,255,.8);
-            padding: 1.7rem;
-        }
-        h2 {
-            text-align: center;
-            font-family: system-ui;
-            color: firebrick;
-            font-size: 2rem;
-        }
-        .buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .button {
-            width: 180px;
-            background-color: firebrick;
-            margin: 1rem;
-            text-align: center;
-            padding: 1.3rem;
-            font-family: sans-serif;
-            font-size: 1.3rem;
-            color: white;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: crimson;
-        }
-
-    </style>
-  </head>
-  <body>
-    <div class="logo"></div>
-    <div class="background-image">
-        <div class="content-grid">
-            <div class="content">
-                <h2>Program</h2>
-                <div class="buttons">
-                    <div class="button">
-                        Letöltés
-                    </div>
-                    <div class="button">
-                        Online verzió
-                    </div>
-                </div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Montserrat:400,700|Lora:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bontakozó Tanácsadó Műhely</title>
+</head>
+<body>
+    <header class="header">
+        <div class="icon"></div>
+        <!-- h1 class="heading">Your Heading</h1 -->
+        <div class="contacts">
+            <div class="contact-item">
+                <a href="mailto:bontakozomuhely@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>&nbsp;bontakozomuhely@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.facebook.com/profile.php?id=61550286011921">
+                    <i class="fab fa-facebook"></i>
+                    <span>&nbsp;bontakozomuhely</span>
+                </a>
             </div>
         </div>
-    </div>
-  </body>
+    </header>
+    
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Módszereink</a></li>
+            <li><a href="#">Mivel fordulhatnak hozzánk?</a></li>
+            <li><a href="#">Tudnivalók</a></li>
+            <li><a href="#">Bemutatkozás</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <h1>Üdvözöljük a Bontakozó Tanácsadó Műhely honlapján!</h1>
+            <p>Örömmel osztjuk meg, hogy sok vágyódás, tervezgetés és keresgélés után, új lehetőséget kínálunk a
+            gyermekeket nevelő családoknak Egerben.</p>
+            <p>Mozgás fókuszú csoportokat szervezünk kifejezetten óvodáskorúak számára.</p>
+            <p>A dinamikus szenzoros integrációs terápiás (Ayres) szemléletű csoportokat elsősorban az idegrendszeri
+            éretlenséggel, önszabályozási nehézséggel küzdő gyermekeknek ajánljuk.
+            A részletekről tájékozódhat honlapunkról.</p>
+            <p>Keressen bátran bennünket, amennyiben úgy gondolja, hogy közösen gondolkodna, dolgozna velünk
+            gyermeke harmonikusabb működése érdekében!</p>
+            <p>A továbbiakban a szolgáltatásaink körét bővíteni tervezzük (korosztály és a módszerek tekintetében is).</p>
+            <p>Kövesse figyelemmel munkánkat! <small>Én ide írnám, hogy "Köszönjük!"</small></p>
+    </main>
+</body>
 </html>
