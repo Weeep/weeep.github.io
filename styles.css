@@ -1,11 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: 'Lora', serif;
 }
 
-/* Reset default margin and padding */
-body, h1, h2, h3, ul, p {
-    margin: 0;
-    padding: 0;
+h3 {
+    padding: .5rem 0;
 }
 
 /* Basic styling for the header */
@@ -68,13 +72,30 @@ body, h1, h2, h3, ul, p {
 
 .menu ul {
     list-style: none;
+}
+
+.menu > ul {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    /*padding: 10px; */
 }
 
 .menu li {
     margin: 0 15px;
+    width: max-content;
+    padding: .7rem 0;
+    transition: background-color 500ms;
+    font-family: 'Montserrat', serif;
+    color: gray;
+}
+
+.menu .active {
+    color: white;
+    cursor: pointer;
+}
+
+.menu .active:hover {
+    background-color: gray;
 }
 
 .menu a {
@@ -83,27 +104,62 @@ body, h1, h2, h3, ul, p {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Styling for the main content */
-.main-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Rest of your styles... */
+
+/* Style for submenu */
+.submenu {
+    background-color: #333;
+    position: relative;
 }
 
-.main-content h1 {
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.page-frame {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the main content */
+.page {
     width: 700px;
+    padding: 20px;
+}
+
+.page h1 {
     padding-bottom: 2rem;
 }
 
-.main-content p {
-    width: 700px;
+.page .content {
+}
+
+.page .content p {
+}
+
+p {
     padding-bottom: 1.2rem;
     line-height: 1.6;
 }
 
+.page .content img {
+    float: right;
+    width: 50px; /* Adjust the image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 0 0 1rem 1rem;
+}
+
 small {
     color: lightgray;
+}
+
+.displayNone {
+    display: none;
 }
 
 /* Media query for responsiveness */

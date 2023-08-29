@@ -30,24 +30,44 @@
     
     <nav class="menu">
         <ul>
-            <li><a href="#">Módszereink</a></li>
+            <li id="submenu" class="submenu">
+                <a href="#" class="menu-link">Módszereink</a>
+                <ul class="submenu-content">
+                    <li class="active" onclick="changeContent('methods')" >DSZIT szemléletű foglalkozás</li>
+                    <li class="active">Képességfelmérések</li>
+                    <li>Kisiskolás csoportok</li>
+                    <li>Kamasz csoportok</li>
+                    <li>Integrált szülő-csecsemő konzultáció</a></li>
+                </ul>
+            </li>
             <li><a href="#">Mivel fordulhatnak hozzánk?</a></li>
             <li><a href="#">Tudnivalók</a></li>
             <li><a href="#">Bemutatkozás</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
     </nav>
-    <main class="main-content">
-        <h1>Üdvözöljük a Bontakozó Tanácsadó Műhely honlapján!</h1>
-            <p>Örömmel osztjuk meg, hogy sok vágyódás, tervezgetés és keresgélés után, új lehetőséget kínálunk a
-            gyermekeket nevelő családoknak Egerben.</p>
-            <p>Mozgás fókuszú csoportokat szervezünk kifejezetten óvodáskorúak számára.</p>
-            <p>A dinamikus szenzoros integrációs terápiás (Ayres) szemléletű csoportokat elsősorban az idegrendszeri
-            éretlenséggel, önszabályozási nehézséggel küzdő gyermekeknek ajánljuk.
-            A részletekről tájékozódhat honlapunkról.</p>
-            <p>Keressen bátran bennünket, amennyiben úgy gondolja, hogy közösen gondolkodna, dolgozna velünk
-            gyermeke harmonikusabb működése érdekében!</p>
-            <p>A továbbiakban a szolgáltatásaink körét bővíteni tervezzük (korosztály és a módszerek tekintetében is).</p>
-            <p>Kövesse figyelemmel munkánkat! <small>Én ide írnám, hogy "Köszönjük!"</small></p>
-    </main>
+
+    <div class="page-frame">
+        <main id="page" class="page">
+            
+            <h1>Üdvözöljük a Bontakozó Tanácsadó Műhely honlapján!</h1>
+            
+            <div class="content">
+                <img src="img/img01.jpg" class="float-image" style="width: 200px;">
+            
+                <p>Örömmel osztjuk meg, hogy sok vágyódás, tervezgetés és keresgélés után, új lehetőséget kínálunk a
+                gyermekeket nevelő családoknak Egerben.</p>
+                <p>Mozgás fókuszú csoportokat szervezünk kifejezetten óvodáskorúak számára.</p>
+                <p>A dinamikus szenzoros integrációs terápiás (Ayres) szemléletű csoportokat elsősorban az idegrendszeri
+                éretlenséggel, önszabályozási nehézséggel küzdő gyermekeknek ajánljuk.
+                A részletekről tájékozódhat honlapunkról.</p>
+                <p>Keressen bátran bennünket, amennyiben úgy gondolja, hogy közösen gondolkodna, dolgozna velünk
+                gyermeke harmonikusabb működése érdekében!</p>
+                <p>A továbbiakban a szolgáltatásaink körét bővíteni tervezzük (korosztály és a módszerek tekintetében is).</p>
+                <p>Kövesse figyelemmel munkánkat! <small>Én ide írnám, hogy "Köszönjük!"</small></p>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
