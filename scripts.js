@@ -431,7 +431,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById('icon').addEventListener("click", () => {
-        location.replace('http://127.0.0.1:5500/');
+        //location.replace('http://127.0.0.1:5500/');
+        location.replace('https://weeep.github.io/');
     })
 });
 
