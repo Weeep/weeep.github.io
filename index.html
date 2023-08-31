@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="icon"></div>
+        <div id="icon" class="icon"></div>
         <!-- h1 class="heading">Your Heading</h1 -->
         <div class="contacts">
             <div class="contact-item">
@@ -33,17 +33,17 @@
             <li id="submenu" class="submenu">
                 <a href="#" class="menu-link">Módszereink</a>
                 <ul class="submenu-content">
-                    <li class="active" onclick="changeContent('methods')" >DSZIT szemléletű foglalkozás</li>
-                    <li class="active">Képességfelmérések</li>
+                    <li class="active" onclick="changeContentToDSZIT()">DSZIT szemléletű foglalkozás</li>
+                    <li class="active" onclick="changeContentToAbility()">Képességfelmérések</li>
                     <li>Kisiskolás csoportok</li>
                     <li>Kamasz csoportok</li>
                     <li>Integrált szülő-csecsemő konzultáció</a></li>
                 </ul>
             </li>
-            <li><a href="#">Mivel fordulhatnak hozzánk?</a></li>
-            <li><a href="#">Tudnivalók</a></li>
-            <li><a href="#">Bemutatkozás</a></li>
-            <li><a href="#">Blog</a></li>
+            <li class="active" onclick="changeContentToTurnToUs()">Mivel fordulhatnak hozzánk?</li>
+            <li class="active" onclick="changeContentToGoodToKnow()">Tudnivalók</a></li>
+            <li class="active" onclick="changeContentToIntroduction()">Bemutatkozás</a></li>
+            <li><a href="https://blog.hu/" target="_blank">Blog</a></li>
         </ul>
     </nav>
 

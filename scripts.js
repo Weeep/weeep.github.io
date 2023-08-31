@@ -1,8 +1,301 @@
-function changeContent(contentId) {
-    //document.getElementById('submenu-content').style.display = 'none'
-    //document.getElementById("submenu").querySelector(".submenu-content").classList.add("displayNone");
-
+ function changeContentToGoodToKnow() {
     document.getElementById("page").innerHTML = `
+    Keretek/ hasznos tudnivalók
+    Hogyan történik a bejelentkezés?
+    A bejelentkezés emailben történik, mivel a munkánk jellege miatt, napközben nem tudjuk felvenni a
+    telefont. Kérjük, fogalmazzák meg néhány mondatban a megkeresés okát, és írják meg telefonos
+    elérhetőségüket is, hogy a további egyeztetés céljából kereshessük Önöket!
+    email: bontakozomuhely@gmail.com
+    Az ellátás időbeli keretei
+    Gyakran felmerül a kérdés, hogy meddig szükséges a gyermek részvétele a munkafolyamatban? Erre
+    sajnos nem tudunk a gyermek és családja megismerése nélkül választ adni. Az előrehaladás mértékét
+    a személyes adottságok, a részvételi lehetőség gyakorisága és az egyéni életmód jellemzői is
+    befolyásolják. A szemlélet nondirektivitása, illetve komplex volta miatt általában egy tanévet
+    szoktunk javasolni kezdésképpen. 
+    A szülővel történő első találkozásokat, illetve a gyermek megismerését követően javaslatot teszünk a
+    gyerek ellátására, amennyiben a javaslat a csoportban való részvétel, ez heti egy, állandó időpontban
+    szervezett  45 perces foglalkozást jelent. 
+    Mi a szülő szerepe a közös munkafolyamatban?
+    Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
+    rendszerszemlélet jegyében dolgozunk. A gyermek tünete nem független a környezetétől. A
+    viselkedési minták megértéséhez, az egészséges és hatékonyabb működésmód megtalálásához meg
+    kell ismernünk a szülő tapasztalatait, elképzeléseit, érzéseit, a gyermek és család fejlődéstörténetét.
+    Azon dolgozunk, hogy az elfogadó légkörben a szülők a bizalmukba tudjanak avatni minket, mert a
+    szakmai tudásunk nem hasznosítható, nem általános érvényű önmagában, nem tudunk sajnos kész
+    receptet nyújtani. Azonban a kölcsönösen aktív részvételünk sikeressé teheti az együttműködést.
+    Hisszük, hogy több szem többet lát, örömünkre szolgál, ha mindkét szülő be tud kapcsolódni a közös
+    munkába. 
+    A hozzánk járó gyermekek szüleivel minimum félévente egy alkalommal szülőkonzultáció keretében
+    osztjuk meg a tapasztalatainkat egymással. Természetesen a szülők igénye alapján, illetve
+    amennyiben a szakmai szempontok indokolttá teszik, lehetőség van további konzultációs időpontot
+    egyeztetni. 
+    Áraink
+    Óra típusa Hossza Árak/alkalom
+    Anamnézis, kezdő szülőkonzultáció 90 perc 20000 Ft
+    Csoportos óra (4-5 fő) 45 perc 7000 Ft/fő 
+    Egyéni óra 45 perc 13000 Ft
+
+    Szülőkonzultáció/ tanácsadás 60 perc 15000 Ft
+    Szülőkonzultáció/ tanácsadás 90 perc 20000 Ft
+    SEED Fejlődési Skála, konzultáció 120 perc 25000 Ft
+    Iskolaérettségi vizsgálat 120 perc 20000 Ft
+    Mozgásfejlettség szűrővizsgálat, konzultáció 90 perc 20000 Ft
+    Évközi szakvélemény a szülő kérésére 6000 Ft
+    Írásos véleményt csak a képességmérések (SEED Fejlődési Skála, Iskolaérettségi vizsgálat,
+    Mozgásfejlettség szűrővizsgálat) után kapnak a szülők, a gyermekkel történő egyszeri találkozást
+    követően.
+    Ezen kívül a szülő kérhet a gyermek fejlődéséről, állapotáról szakvéleményt, ezt azonban csak a
+    gyermekkel történő több alkalmas találkozást követően tudjuk szakmai szempontból felelősen
+    kiállítani (a gyermek oldódásától, működésétől függően 2-4 alkalom).
+    `
+ }
+
+function changeContentToIntroduction() {
+    document.getElementById("page").innerHTML = `
+    <ul><li class="li-introduction" id="eab-intro">Elek Ágnes Borbála Fénykép!</ul></li>
+    <div class="eab-intro-content">Tanácsadó szakpszichológus
+    2012 óta dolgozom pedagógiai szakszolgálatban. Itt azokkal a gyermekekkel foglalkozunk, akiket a
+    szülők saját indíttatásból, vagy a gyermek pedagógusainak javaslatára hozhatnak hozzánk,
+    képességeik felmérésére, viselkedési-, beilleszkedési-, fejlődési-, vagy egyéb érzelmi nehézségeik
+    hátterének feltérképezése céljából.
+    Szakmai érdeklődésem középpontjában a kezdetektől fogva a gyermekek állnak. Már gimnazista
+    koromban önkénteskedtem gyermekotthonban, táboroztattam gyerekeket. Ez a fajta elköteleződés,
+    bár kissé más formában, mindmáig az életem részét képezi.
+    Szakmai ismeretszerzésem folyamatáért rendkívül hálás vagyok volt gyakorlati-és
+    munkahelyeimnek, képzőimnek.
+    A gyerekekkel való munka és a saját önismeretei folyamataim is arra a felismerésre vezettek, hogy a
+    legörömtelibb kapcsolódások, amikben igazán otthon érzem magam szakemberként is, a mozgáson,
+    alkotó folyamatokon keresztül történnek.
+    Szerencsés vagyok, hogy egyetemista koromban megismerkedhettem a dinamikus szenzoros
+    integrációs (Ayres) terápiával, majd képződhettem is ezen a téren, és munkahelyeimen volt
+    lehetőségem tapasztalatokkal mélyíteni a megszerzett tudást.  
+    Csodálom a gazdagságát, kreativitását, játékosságát ennek a módszernek, és csodálom mindeközben
+    a gyermekeket, akik elemi örömmel vesznek részt a folyamatban, és járják be a saját útjukat,
+    kommunikálnak a játék nyelvén, megjelenítik és feldolgozzák a konfliktusaikat, amíg mi
+    szakemberként ezt megtartó figyelemmel kísérjük, serkentjük. Lelkesítő számomra a folyamat,
+    amiben megismerhetem a velem együtt dolgozó szülőket, és gyermekeiket. Szeretem, ahogy kialakul
+    a bizalom és párbeszéd közöttünk, és így megszülethet a megértés a közös munka gyümölcseként.
+    Mindeközben rendkívül hasznosnak is tartom ezt a szemléletet, az idegrendszeri éretlenség
+    mibenlétének ismeretét. Értelmezhetővé teszi az eleinte sokszor ellentmondónak, érthetetlennek
+    látszó – szülőknek, gyermekeknek és pedagógusoknak - egyaránt nehézséget okozó tünetek
+    sokféleségét.
+    Nem lehet elégszer hangoztatni, hogy a felgyorsult világunk mozgásszegény, ingerekben azonban
+    kifejezetten gazdag voltát, ami a szociális kapcsolatok elszegényesedésével is együtt jár, az érlelődő
+    idegrendszer nehezen tudja követni. A tapasztalataim alapján ez jelentős mértékben hozzájárul a
+    manapság jelentkező elakadásokhoz.
+
+    A szülőkkel való munka folyamán az évek alatt erősödött a felismerésem, hogy a gyermekeknél
+    óvodás- iskolás korban problémát okozó tünetek, sok esetben már egész korai életszakaszban
+    megjelentek. A szülők többnyire érzékelték is azokat, azonban nem találtak megfelelő válaszokat a
+    felmerülő kérdéseikre. Ennek köszönhetően figyelmem egyre inkább a korai életszakasz fejlődése
+    felé irányult, tovább képeztem magam a csecsemőkori regulációs zavarok kezelése (integrált szülő-
+    csecsemő konzultáció), illetve a korai képességfelmérés (SEED Fejlődési Skála) irányában.
+    Ezeknek köszönhetően a látásmódom egyre komplexebbé vált, olyan értelmezési keretet,
+    munkamódot találtam, amit a mai kor nehézségei között hitelesnek, jól használhatónak érzek, és
+    aminek segítségével, a hozzám forduló kliensek számára egy elfogadó, inspiráló, a nehézségek
+    megélésével együtt is a megértést és változást támogató szemléletet biztosíthatok.
+    Az elmúlt tanévben alkalmunk nyílt együtt dolgozni Váczy-Herman Ágnes kolléganőmmel különféle
+    csoportokat vezetve. Az együttműködésünk minősége tovább növelte a csoportos munka iránti
+    elkötelezettségünket, inspiráló és eredményes volt a kettős vezetés. 
+    Szakmai önéletrajz -tovább
+    SZAKMAI TAPASZTALATOK
+    2020-22        Magyar Máltai Szeretetszolgálat
+
+    A Fókuszban a gyermek pályázati projektben koragyerekkori szakértőként
+    tevékenykedtem Heves megye néhány településén, ahol a 3 év alatti gyermekek
+    fejlődését követtem nyomon, támogattam.
+
+    2020-tól       Heves megyei Pedagógiai Szakszolgálat Füzesabonyi Tagintézménye
+
+    Nevelési tanácsadás körébe tartozó tevékenységek, alkalomszerűen szakértői
+    tevékenység
+
+     
+    2015-től       Világítani Fogok Egyesület, önkéntes (hátrányos helyzetű gyerekek táboroztatása,
+
+    családokkal kapcsolattartás)                   
+
+    2012-20   Fővárosi Pedagógiai Szakszolgálat IV. Ker. Tagintézménye, pszichológus
+    Járási szintű szakértői vizsgálatok, nevelési tanácsadás körében végzett tevékenységek
+    (idegrendszeri éretlenség vizsgálata és kezelése, szülő-csecsemő konzultáció),
+    iskolapszichológusi feladatkörök
+
+     2013-15 Palánta Alapítvány Óvoda, óvodapszichológus
+                         Szülőcsoportok vezetése, csoportos megfigyelések, szülőkonzultáció.
+    2010     Óbudai Nevelési Tanácsadó, III. ker., 60 órás szakmai gyakorlat (Diagnosztikai
+
+    munka, Dszit csoportok támogatása).                     
+    2010             MRE Bethesda Gyermekkórház, családterápiás gyakorlat
+                          Családterápiás ülések részvétel, jegyzőkönyvezés.
+    TANULMÁNYOK, KÉPZÉSEK
+     
+    2017 SEED Fejlődési Skála, 30 órás tanfolyam, Korai Fejlesztő Központ 
+
+    2014-2016 Integrált szülő- csecsemő konzultáció, SOTE
+
+    Csecsemő- és kisgyermekkori regulációs zavarok kezelésére használt prevenciós,
+    intervenciós módszer.
+
+    2014-2018 Tanácsadó szakpszichológus képzés, ELTE
+                                Családi és párkapcsolati tanácsadás specializáció                          
+    2014              Szenzoros integrációs terápiák: saját élmény csoport
+    2014 Szenzoros integrációs terápiák elmélete
+    2008-2009 120 óra pszichodráma sajátélmény 
+    2009 Motivációs tréning, PPKE BTk
+    2005- 2012 Pszichológia MA, Pedagógia MA, Pázmány Péter Katolikus Egyetem BTK (Klinikai
+
+    pszichológia-, Család- és valláspszichológia szakirány)
+    </div>
+    
+    <ul><li class="li-introduction" id="vha-intro">Váczy-Herman Ágnes fénykép!</li></ul>
+    <div class="vha-intro-content">
+    Pedagógiai szakpszichológus.
+    2011 óta dolgozom pedagógiai szakszolgálatban. Munkám elsősorban pszichológiai tanácsadó,
+    támogató és fejlesztő tevékenységen alapul.
+    Tevékenységem része az óvodával, iskolával összefüggő tanulási, magatartási, beilleszkedési és
+    egyéb pszichés problémák esetén a szülőkkel, pedagógusokkal közös konzultációs folyamatban
+    megoldást keresni, továbbá a gyermekekkel végzett egyéni és csoportos fejlesztő foglalkozások
+    keretében történő segítségnyújtás. A csoportos pszichológiai ellátás óvodáskorú gyerekek esetében
+    elsősorban mozgásalapú, érést, fejlődést, lelki összerendeződést segítő, iskoláskorú gyerekek
+    esetében személyiségfejlesztő és társas hatékonyságot fejlesztő foglalkozást jelent.
+    A szülőkkel, pedagógusokkal közös konzultációs folyamatban azt tapasztaltam, hogy a szülők,
+    pedagógusok sokszor eszköztelennek és tehetetlennek érzik magukat a modernkori gyermekek
+    vonatkozásában felmerülő problémák esetén. Emiatt a konfliktusok megoldásában gyakran
+    aktivizálódnak rossz kommunikációs beidegződések, ösztönös minták, tévhitekre épülő megoldási
+    utak. Ezeknek hatására azonban a problémák nem oldódnak meg, hanem ellenkezőleg, egy negatív
+    spirál indul be. A nem megfelelő problémakezelés eredménye egyre több konfliktus, egyre mélyülő
+    ellentétek, egyre kezelhetetlenebb gyermek. A negatív spirál ugyanakkor pozitív irányban is
+    működik. Tudatosságunkon és a belefektetett munkán múlik, hogy az önmagát erősítő folyamat
+    milyen irányt vesz. Szerencsés vagyok abban, hogy számos esetben kísérhettem a folyamatot, aminek
+    során a felismerések, belátás, elfogadás talaján a sodródás helyét a tudatos irányítás vette át.
+    A gyerekekkel végzett pszichológiai fejlesztő tevékenységeim közül külön kedves számomra az
+    óvodáskorú gyermekekkel való mozgásalapú foglalkozás. Lenyűgöz, ahogy a gyerekek
+    felszabadulnak egy lehetőségeket, kihívásokat kecsegtető térben, közegben, ahogy örömmel, és
+    fáradtságot nem kímélve bontakoztatják ki képességeiket, és mutatják meg személyiségük mintáit.
+    Megtapasztalhattam, hogy a gyerekek miközben felhőtlenül élik gyermeki mivoltukat, belső
+    hajtóerejük ösztönösen azok felé a kihívások felé tereli őket, ami egyúttal fejlődésüket is szolgálja
+    Pszichológusi minőségem mellet fontosnak tartom megemlíteni, hogy két gyermek édesanyja is
+    vagyok, akiket férjemmel együtt nevelünk. A magánéleti folyamat és tapasztalás, amelynek során
+    családdá váltunk, hozzájárult szakmabeli szemléletem formálódásához is. Megtapasztaltam, hogy
+    hiába az elméleti tudás, a gyermekes lét számtalan kihívást tartogat, ennek során elkerülhetetlenül
+    szembesülünk saját korlátainkkal is. Ez nehéz lelki út, úgy vélem, minden szülőnek van olyan
+    időszaka, amikor elkel számára a támogatás, az együttérzés. 
+    Hiszek a kapcsolat, kapcsolódás erejében, legyen szó felnőttek közötti, felnőtt-gyerek, vagy gyerekek
+    közötti kapcsolatról. Azt gondolom, hogy bármikor képesek vagyunk fejlődni abban, hogy
+    egészségesen, őszintén tudjunk kapcsolódni egymáshoz, és önmagunkhoz.
+
+    Pszichológiai munkám során legnagyobb örömöm, amikor megszületik a közös munka eredménye, a
+    közös megértése a reakciók mögött húzódó okoknak. A megértésből fakadó figyelem, és
+    összehangolódás a kapcsolat megerősödéséhez vezet, mely aztán hozzájárul a személyes
+    növekedéshez, és bázisa, támasza, erőforrása lesz gyermeknek, felnőttnek egyaránt.
+    Az elmúlt tanévben Elek Ágnes tanácsadó szakpszichológus kollégámmal vezettünk közösen
+    dinamikus szenzoros integrációs szemléletű óvodás csoportokat, és kamaszok számára szociális
+    készségfejlesztő csoportokat. A közös működés gyümölcsözőnek bizonyult, élünk a kettős vezetés
+    nyújtotta előnyökkel, ami által magasabb szakmai színvonalat is képviselhetünk. Mivel tapasztaljuk,
+    hogy egyre növekszik azon gyerekek száma, akiknél éretlen, vagy nem megfelelően, eltérően
+    működő idegrendszeri működés jellemző, fókuszunkban elsősorban dinamikus szenzoros integrációs
+    terápiás szemléletű foglalkozások lesznek. A DSZIT szemléletű ellátásnak köszönhető magasabb
+    idegrendszeri integrációs szint elérése mellet, a szülőkonzultáció folyamatában a támogatáson,
+    megértésen keresztül lehetőség nyílik a szülők gyerekeikkel való kapcsolódásának elmélyítésére is.
+    Szakmai önéletrajz- tovább
+    SZAKMAI TAPASZTALAT
+    2011-től jelenleg is Heves Megyei Pedagógiai Szakszolgálat Füzesabonyi Tagintézmény
+    Nevelési tanácsadási tevékenység, iskolapszichológiai, óvodapszichológiai
+    tevékenység, szakértői tevékenység, iskola- és óvodapszichológus feladatok
+    koordinátora munkakör.
+    2009-2010                  Trenkwalder, Debrecen
+                                     Munkaerő közvetítés
+    TANULMÁNYOK, KÉPZÉSEK
+    2012-2014 Pedagógiai Szakpszichológus (4 félév), Eötvös Lóránd
+
+    Tudományegyetem Pedagógiai és Pszichológiai Kar
+
+    2003-2010                       Pszichológus szakfordító (angol nyelvű) (4 félév), Debreceni
+
+    Egyetem Bölcsésztudományi Kar
+
+                          Okleveles Pszichológus (10 félév), Debreceni Egyetem
+
+    Bölcsésztudományi Kar
+    </div>
+    `
+
+    document.getElementById('eab-intro').addEventListener("click", () => {
+        document.getElementById('eab-intro').classList.toggle('li-introduction-opened')
+        document.querySelector('.eab-intro-content').classList.toggle('eab-intro-content-opened')
+    })
+}
+
+function changeContentToTurnToUs() {
+    document.getElementById("page").innerHTML = `
+    Mivel fordulhatnak hozzánk?
+    Milyen nehézségekkel kereshetnek bennünket?
+    ⧫ Tanulási/ magatartási/ beilleszkedési nehézség esetén
+    ⧫ Szorongásos panaszok esetén
+    ⧫ Szomatikus panaszok esetén
+    ⧫ Amikor az iskolaérettség kérdéses, illetve éretlenség miatt javasolt a további óvodai nevelés 
+    ⧫ Tic megjelenésekor
+    ⧫ Figyelemzavar gyanújával
+    ⧫ Hiperaktivitás/ ADHD gyanújával
+    ⧫ Ha gyermeküknek mozgásfejlesztést javasoltak
+    ⧫ Kiegészítő ellátásként Autizmus spektrumzavar esetén
+    ⧫ Szelektív mutizmus esetén
+    ⧫ Ha kérdéseik vannak gyermekük nevelését illetően
+    ⧫ Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
+    fejlődése-6 éves korig)
+    Amit nem tudunk vállalni:
+    Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
+    iskolaérettségi vizsgálat), melyet a belátásuk szerint használhatnak. Továbbá kölcsönös igény esetén
+
+    vállalunk konzultálást a gyermek pedagógusaival. Azonban a szakmai javaslataink  a nevelési-
+    oktatási intézmények számára nem kötelező jellegűek. 
+    Nem diagnosztizálunk (és gyógyszert sem tudunk felírni), ehelyett, amennyiben diagnosztizálásra
+    van szükség, igyekszünk a szülőt informálni, gyermeke érdekében a megfelelő ellátás
+    megtalálásában támogatni. 
+    A gyermeküket külön nevelő szülők esetében a közös megállapodás alapján, és a szakmai
+    szempontok szerint vállalunk egyéni/ illetve közös konzultációt is. Azonban gyermekelhelyezési
+    per esetén nem tudunk állást foglalni egyik fél pártján sem. Ilyen célú megkeresésnek nem
+    tudunk eleget tenni, a közös munkára nincs lehetőség.
+    `
+}
+
+function changeContentToAbility() {
+    document.getElementById("page").innerHTML = `
+    <h1>Képességfelmérések</h1>
+    
+    <h3>SEED Fejlődési Skála (0-4 év)</h3>
+    <p>A SEED Fejlődési Skála hét terület (Finommozgás, Nagymozgás, Szociális- érzelmi terület,
+    Adaptív- gondolkodói terület, Beszéd és nyelv (expresszív és receptív nyelvi funkció),
+    Táplálkozás, Öltözködés- tisztálkodás) felmérésével ad információt a gyermek erősségeiről,
+    gyengeségeiről, életkori követelményekhez mért érettség szintjéről, illetve képesség
+    struktúrájáról.</p>
+    <p>Eszközkészlete kifejezetten gazdag, de többnyire olyan típusú játékokat, tárgyakat tartalmaz,
+    amivel egy viszonylag „jól felszerelt” gyerekszoba is rendelkezik (pl.: labda, csörgő, fakocka,
+    gyöngy, dobozok, képeskönyv, puzzle, stb…). A vizsgálat folyamán felkínáljuk (életkorától
+    függő, hogy mit és hogyan) az eszközöket, és megfigyeléseket végzünk azzal kapcsolatban,
+    ahogy a gyermek reagál ezekre, illetve ahogy manipulálni kezd ezekkel. A vizsgálat a szülő
+    jelenlétében történik, ő is kiegészítheti tapasztalataival a látott képet. Jelenlétükben a
+    gyermekek könnyebben oldódnak az esetleges kezdeti szorongásból, a szülő támogathatja a
+    gyermek részvételét.</p>
+
+    <h3>Iskolaérettségi vizsgálat (5-6 év)</h3>
+    <p>A hatéves kori kötelező beiskolázás elbizonytalanító lehet sok szülő számára. Mi szükséges
+    ahhoz, hogy egy gyermek magabiztosan kezdhesse meg iskolai tanulmányait?</p>
+    <p>A megfelelő érettségnek testi-, lelki és kognitív tényezői egyaránt vannak. Így vizsgálatunk is
+    komplex, mely során megfigyeljük a gyermek testi, mozgásbeli-, kognitív-, és szociális,
+    érzelmi fejlettségét is. Természetesen ezek nem függetlenek egymástól.</p>
+    <p>Tapasztalatainkat szóbeli konzultáció és írásos vélemény formájában osztjuk meg a szülővel,
+    ha szükséges az érést támogató javaslatot teszünk.</p>
+    <p>Szeretnénk felhívni a szülők figyelmét, hogy szakvéleményünk az oktatási rendszerben
+    szabadon felhasználható, azonban abban megfogalmazott javaslataink kötelező érvénnyel
+    nem bírnak az oktatási rendszerben! Az iskolába lépés megkezdésének halasztását a szülőnek
+    az <a href="https://ohtan.oh.gov.hu/" target="_blank">Oktatási Hivatalnál</a> szükséges kezdeményeznie, általában az adott év január közepéig van
+    erre lehetőség.</p>`
+}
+
+function changeContentToDSZIT() {
+    document.getElementById("page").innerHTML = `
+    <h1>DSZIT szemléletű foglalkozás</h1>
     <h3>Mi az az idegrendszeri éretlenség?</h3>
     
     <p>Az idegrendszerünk komplex, a teljes emberi működést sokféleképpen meghatározó tényező,
@@ -76,42 +369,45 @@ function changeContent(contentId) {
     <li>Akiknek nehézségeik vannak a térbeli-, és időbeli tájékozódással.</li>
     <li>Az “egyemberes” gyermekek</li>
     </ul>
-    Csoportos vagy egyéni ellátás?
-     Miért igyekszünk zárt csoportokkal dolgozni?
-    Alapvetően állandó csoportokkal dolgozunk, mert a gyermekek biztonságérzetéhez, illetve a
+    
+    <h3>Csoportos vagy egyéni ellátás?</h3>
+    <h4>Miért igyekszünk zárt csoportokkal dolgozni?</h4>
+    <p>Alapvetően állandó csoportokkal dolgozunk, mert a gyermekek biztonságérzetéhez, illetve a
     kapcsolódásaik minőségi változásához a kiszámíthatóság szükséges. A közös térben az
     együttes élménynek nagy szerepe van. A csoportban a gyermekek közös szabályokat,
     játékokat alkotnak, saját szokásaik lesznek, ami az együttes sikerük, de az egyéneket külön-
-    külön is új, a korábbiaknál magasabb szintű készségekkel ruházza fel. Egymás fejlődésének
-    mozgatórugói, visszajelzői, tanúi. Időnként egymás riválisai, ellenlábasai, de ezekből a
+    külön is új, a korábbiaknál magasabb szintű készségekkel ruházza fel.</p>
+    <p>Egymás fejlődésének mozgatórugói, visszajelzői, tanúi. Időnként egymás riválisai, ellenlábasai, de ezekből a
     konfliktusokból is együtt építkezünk. Felismerjük, megértjük, elfogadjuk, megtanuljuk
-    
     kommunikálni az érzéseket, feszültségeket konstruktív módon. Ehhez a lassú, közös
-    növekedéshez, éréshez azonban elengedhetetlen az állandó jelenlét. 
-    Mitől függ, hogy egyéni vagy csoportos ellátást javaslunk?
-    A tapasztalataink alapján az idegrendszeri éretlenség következtében kialakult viselkedési
+    növekedéshez, éréshez azonban elengedhetetlen az állandó jelenlét.</p>
+    
+    <h4>Mitől függ, hogy egyéni vagy csoportos ellátást javaslunk?</h4>
+    <p>A tapasztalataink alapján az idegrendszeri éretlenség következtében kialakult viselkedési
     nehézségek esetén a csoportos ellátást javasoljuk általánosságban. A fenti bekezdésben
     olvashatók a csoportos élmény előnyei. Hiszünk abban, hogy a csoporthelyzetben a
-    gyermekek intenzívebben hozzák a nehézségeiket, így gyorsabban ismerhetjük és érthetjük 
-    meg egy-egy gyermek működését. Azonban előfordul olyan eset is, hogy egy gyermek a
+    gyermekek intenzívebben hozzák a nehézségeiket, így gyorsabban ismerhetjük és érthetjük 
+    meg egy-egy gyermek működését.</p>
+    <p>Azonban előfordul olyan eset is, hogy egy gyermek a
     korához képest nagyobb lemaradással küzd, vagy olyan speciális élethelyzetben van, ami
     miatt kiemelt figyelmet igényel, így számára a csoport nem lenne elegendő, ez indokolttá
     teheti a gyermek egyéni ellátását. Az ellátás formájára való javaslattételünket minden esetben
-    a szülővel történő egyeztetés és a gyermekkel való találkozás előzi meg. 
-    Ez csak játék?!
-    A sokszínű tevékenységet felkínáló tér és eszközök kíváncsiságot, érdeklődést felkeltő,
+    a szülővel történő egyeztetés és a gyermekkel való találkozás előzi meg.</p>
+    
+    <h4>Ez csak játék?!</h4>
+    <p>A sokszínű tevékenységet felkínáló tér és eszközök kíváncsiságot, érdeklődést felkeltő,
     mozgásra hívó, örömöt, lelkesedést kiváltó folyamatot indítanak a gyerekekben, tehát valóban
-    játszanak.
-    Amitől mégis több lesz, mint egy játék, az egyrészt a pszichológus jelenlétnek, másrészt a
+    játszanak.</p>
+    <p>Amitől mégis több lesz, mint egy játék, az egyrészt a pszichológus jelenlétnek, másrészt a
     speciális ingereket biztosító terápiás térnek köszönhető.
     A pszichológusok jelenlétének szerepe ebben a folyamatban egyfelől a csoporttagok egyéni
     szintjének, kezelésének, és fejlődésének megítélése, másfelől katalizátorként serkentik,
     segítik azt a fejlődést, amelyet a gyerekek saját aktív részvételükkel, önszántukból, egyéni
-    útjukon járva érnek el.
-    A meleg, elfogadó, biztonságos közeg és azok a játékszerek, amelyek a vesztibuláris, taktilis
+    útjukon járva érnek el.</p>
+    <p>A meleg, elfogadó, biztonságos közeg és azok a játékszerek, amelyek a vesztibuláris, taktilis
     rendszerük, illetve saját testük érzékelése számára biztosítják az ingereket, együttesen segítik
     az agyféltekék közötti kapcsolat megerősödését, az idegrendszer harmonizációját, támogatják
-    a tanulási, megismerési folyamatokat.`
+    a tanulási, megismerési folyamatokat.</p>`
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -123,12 +419,23 @@ document.addEventListener("DOMContentLoaded", function () {
             submenuContent.style.display = "none";
         });
 
+        submenu.addEventListener("mouseout", function () {
+            const submenuContent = this.querySelector(".submenu-content");
+            submenuContent.style.display = "none";
+        });
+
         submenu.addEventListener("mouseover", function () {
             const submenuContent = this.querySelector(".submenu-content");
             submenuContent.style.display = "block";
         });
     });
+
+    document.getElementById('icon').addEventListener("click", () => {
+        location.replace('http://127.0.0.1:5500/');
+    })
 });
+
+
 
 
 /*
