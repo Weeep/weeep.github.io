@@ -166,6 +166,18 @@ small {
     color: lightgray;
 }
 
+table {
+    padding-bottom: 2rem;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    padding: .5rem;
+}
+
 .displayNone {
     display: none;
 }

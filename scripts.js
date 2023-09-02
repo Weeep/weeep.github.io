@@ -1,52 +1,73 @@
  function changeContentToGoodToKnow() {
     document.getElementById("page").innerHTML = `
-    Keretek/ hasznos tudnivalók
-    Hogyan történik a bejelentkezés?
-    A bejelentkezés emailben történik, mivel a munkánk jellege miatt, napközben nem tudjuk felvenni a
+    <h1>Tudnivalók</h1>
+    <h3>Hogyan történik a bejelentkezés?</h3>
+    <p>A bejelentkezés emailben történik, mivel a munkánk jellege miatt, napközben nem tudjuk felvenni a
     telefont. Kérjük, fogalmazzák meg néhány mondatban a megkeresés okát, és írják meg telefonos
-    elérhetőségüket is, hogy a további egyeztetés céljából kereshessük Önöket!
-    email: bontakozomuhely@gmail.com
-    Az ellátás időbeli keretei
-    Gyakran felmerül a kérdés, hogy meddig szükséges a gyermek részvétele a munkafolyamatban? Erre
+    elérhetőségüket is, hogy a további egyeztetés céljából kereshessük Önöket!</p>
+    <p>email: bontakozomuhely@gmail.com</p>
+    <h3>Az ellátás időbeli keretei</h3>
+    <p>Gyakran felmerül a kérdés, hogy meddig szükséges a gyermek részvétele a munkafolyamatban? Erre
     sajnos nem tudunk a gyermek és családja megismerése nélkül választ adni. Az előrehaladás mértékét
     a személyes adottságok, a részvételi lehetőség gyakorisága és az egyéni életmód jellemzői is
     befolyásolják. A szemlélet nondirektivitása, illetve komplex volta miatt általában egy tanévet
-    szoktunk javasolni kezdésképpen. 
-    A szülővel történő első találkozásokat, illetve a gyermek megismerését követően javaslatot teszünk a
+    szoktunk javasolni kezdésképpen.</p>
+    <p>A szülővel történő első találkozásokat, illetve a gyermek megismerését követően javaslatot teszünk a
     gyerek ellátására, amennyiben a javaslat a csoportban való részvétel, ez heti egy, állandó időpontban
-    szervezett  45 perces foglalkozást jelent. 
-    Mi a szülő szerepe a közös munkafolyamatban?
-    Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
+    szervezett 45 perces foglalkozást jelent.</p>
+    <h3>Mi a szülő szerepe a közös munkafolyamatban?</h3>
+    <p>Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
     rendszerszemlélet jegyében dolgozunk. A gyermek tünete nem független a környezetétől. A
     viselkedési minták megértéséhez, az egészséges és hatékonyabb működésmód megtalálásához meg
     kell ismernünk a szülő tapasztalatait, elképzeléseit, érzéseit, a gyermek és család fejlődéstörténetét.
     Azon dolgozunk, hogy az elfogadó légkörben a szülők a bizalmukba tudjanak avatni minket, mert a
     szakmai tudásunk nem hasznosítható, nem általános érvényű önmagában, nem tudunk sajnos kész
-    receptet nyújtani. Azonban a kölcsönösen aktív részvételünk sikeressé teheti az együttműködést.
+    receptet nyújtani. Azonban a kölcsönösen aktív részvételünk sikeressé teheti az együttműködést.
     Hisszük, hogy több szem többet lát, örömünkre szolgál, ha mindkét szülő be tud kapcsolódni a közös
-    munkába. 
-    A hozzánk járó gyermekek szüleivel minimum félévente egy alkalommal szülőkonzultáció keretében
+    munkába.</p>
+    <p>A hozzánk járó gyermekek szüleivel minimum félévente egy alkalommal szülőkonzultáció keretében
     osztjuk meg a tapasztalatainkat egymással. Természetesen a szülők igénye alapján, illetve
     amennyiben a szakmai szempontok indokolttá teszik, lehetőség van további konzultációs időpontot
-    egyeztetni. 
-    Áraink
-    Óra típusa Hossza Árak/alkalom
-    Anamnézis, kezdő szülőkonzultáció 90 perc 20000 Ft
-    Csoportos óra (4-5 fő) 45 perc 7000 Ft/fő 
-    Egyéni óra 45 perc 13000 Ft
-
-    Szülőkonzultáció/ tanácsadás 60 perc 15000 Ft
-    Szülőkonzultáció/ tanácsadás 90 perc 20000 Ft
-    SEED Fejlődési Skála, konzultáció 120 perc 25000 Ft
-    Iskolaérettségi vizsgálat 120 perc 20000 Ft
-    Mozgásfejlettség szűrővizsgálat, konzultáció 90 perc 20000 Ft
-    Évközi szakvélemény a szülő kérésére 6000 Ft
-    Írásos véleményt csak a képességmérések (SEED Fejlődési Skála, Iskolaérettségi vizsgálat,
+    egyeztetni.</p>
+    <h3>Áraink</h3>
+    <table>
+    <tr>
+    <th>Óratípusa</th><th>Hossza</th><th>Árak/alkalom</th>
+    </tr>
+    <tr>
+    <td>Anamnézis, kezdő szülőkonzultáció</td><td>90 perc</td><td>20000 Ft</td>
+    </tr>
+    <tr>
+    <td>Csoportos óra (4-5 fő)</td><td>45 perc</td><td>7000 Ft/fő</td>
+    </tr>
+    <tr>
+    <td>Egyéni óra</td><td>45 perc</td><td>13000 Ft</td>
+    </tr>
+    <tr>
+    <td>Szülőkonzultáció/tanácsadás</td><td>60 perc</td><td>15000 Ft</td>
+    </tr>
+    <tr>
+    <td>Szülőkonzultáció/tanácsadás</td><td>90 perc</td><td>20000 Ft</td>
+    </tr>
+    <tr>
+    <td>SEED Fejlődési Skála, konzultáció</td><td>120 perc</td><td>25000 Ft</td>
+    </tr>
+    <tr>
+    <td>Iskolaérettségi vizsgálat</td><td>120 perc</td><td>20000 Ft</td>
+    </tr>
+    <tr>
+    <td>Mozgásfejlettség szűrővizsgálat, konzultáció</td><td>90 perc</td><td>20000 Ft</td>
+    </tr>
+    <tr>
+    <td>Évközi szakvélemény a szülő kérésére</td><td>&nbsp;</td><td>6000 Ft</td>
+    </tr>
+    </table>
+    <p>Írásos véleményt csak a képességmérések (SEED Fejlődési Skála, Iskolaérettségi vizsgálat,
     Mozgásfejlettség szűrővizsgálat) után kapnak a szülők, a gyermekkel történő egyszeri találkozást
-    követően.
-    Ezen kívül a szülő kérhet a gyermek fejlődéséről, állapotáról szakvéleményt, ezt azonban csak a
+    követően.</p>
+    <p>Ezen kívül a szülő kérhet a gyermek fejlődéséről, állapotáról szakvéleményt, ezt azonban csak a
     gyermekkel történő több alkalmas találkozást követően tudjuk szakmai szempontból felelősen
-    kiállítani (a gyermek oldódásától, működésétől függően 2-4 alkalom).
+    kiállítani (a gyermek oldódásától, működésétől függően 2-4 alkalom).</p>
     `
  }
 
@@ -228,34 +249,36 @@ function changeContentToIntroduction() {
 
 function changeContentToTurnToUs() {
     document.getElementById("page").innerHTML = `
-    Mivel fordulhatnak hozzánk?
-    Milyen nehézségekkel kereshetnek bennünket?
-    ⧫ Tanulási/ magatartási/ beilleszkedési nehézség esetén
-    ⧫ Szorongásos panaszok esetén
-    ⧫ Szomatikus panaszok esetén
-    ⧫ Amikor az iskolaérettség kérdéses, illetve éretlenség miatt javasolt a további óvodai nevelés 
-    ⧫ Tic megjelenésekor
-    ⧫ Figyelemzavar gyanújával
-    ⧫ Hiperaktivitás/ ADHD gyanújával
-    ⧫ Ha gyermeküknek mozgásfejlesztést javasoltak
-    ⧫ Kiegészítő ellátásként Autizmus spektrumzavar esetén
-    ⧫ Szelektív mutizmus esetén
-    ⧫ Ha kérdéseik vannak gyermekük nevelését illetően
-    ⧫ Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
-    fejlődése-6 éves korig)
-    Amit nem tudunk vállalni:
+    <h1>Mivel fordulhatnak hozzánk?</h1>
+    <h3>Milyen nehézségekkel kereshetnek bennünket?</h3>
+    <ul>
+    <li>Tanulási/ magatartási/ beilleszkedési nehézség esetén
+    <li>Szorongásos panaszok esetén</li>
+    <li>Szomatikus panaszok esetén</li>
+    <li>Amikor az iskolaérettség kérdéses, illetve éretlenség miatt javasolt a további óvodai nevelés</li>
+    <li>Tic megjelenésekor</li>
+    <li>Figyelemzavar gyanújával</li>
+    <li>Hiperaktivitás/ ADHD gyanújával</li>
+    <li>Ha gyermeküknek mozgásfejlesztést javasoltak</li>
+    <li>Kiegészítő ellátásként Autizmus spektrumzavar esetén</li>
+    <li>Szelektív mutizmus esetén</li>
+    <li>Ha kérdéseik vannak gyermekük nevelését illetően</li>
+    <li>Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
+    fejlődése-6 éves korig)</li>
+    </ul>
+    <h3>Amit nem tudunk vállalni</h3>
+    <p>
     Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
     iskolaérettségi vizsgálat), melyet a belátásuk szerint használhatnak. Továbbá kölcsönös igény esetén
-
-    vállalunk konzultálást a gyermek pedagógusaival. Azonban a szakmai javaslataink  a nevelési-
-    oktatási intézmények számára nem kötelező jellegűek. 
-    Nem diagnosztizálunk (és gyógyszert sem tudunk felírni), ehelyett, amennyiben diagnosztizálásra
+    vállalunk konzultálást a gyermek pedagógusaival. <b>Azonban a szakmai javaslataink a nevelési-
+    oktatási intézmények számára nem kötelező jellegűek.</b></p>
+    <p><b>Nem diagnosztizálunk (és gyógyszert sem tudunk felírni)</b>, ehelyett, amennyiben diagnosztizálásra
     van szükség, igyekszünk a szülőt informálni, gyermeke érdekében a megfelelő ellátás
-    megtalálásában támogatni. 
-    A gyermeküket külön nevelő szülők esetében a közös megállapodás alapján, és a szakmai
-    szempontok szerint vállalunk egyéni/ illetve közös konzultációt is. Azonban gyermekelhelyezési
+    megtalálásában támogatni.</p>
+    <p>A gyermeküket külön nevelő szülők esetében a közös megállapodás alapján, és a szakmai
+    szempontok szerint vállalunk egyéni/ illetve közös konzultációt is. <b>Azonban gyermekelhelyezési
     per esetén nem tudunk állást foglalni egyik fél pártján sem. Ilyen célú megkeresésnek nem
-    tudunk eleget tenni, a közös munkára nincs lehetőség.
+    tudunk eleget tenni, a közös munkára nincs lehetőség.</b></p>
     `
 }
 
