@@ -272,7 +272,7 @@ td, th {
 }
 
 .active {
-    
+
 }
 
 .menu-toggle.active .bar:nth-child(1) {
@@ -313,6 +313,10 @@ td, th {
     .menu-toggle {
         padding: 4px;
         display: block; /* Show the hamburger icon */
+    }
+
+    .introduction-container {
+        flex-direction: column;
     }
 }
 
