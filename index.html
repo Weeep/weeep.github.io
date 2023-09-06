@@ -9,44 +9,51 @@
     <title>Bontakozó Tanácsadó Műhely</title>
 </head>
 <body>
-    <header class="header">
-        <div id="icon" class="icon"></div>
-        <!-- h1 class="heading">Your Heading</h1 -->
-        <div class="contacts">
-            <div class="contact-item">
-                <a href="mailto:bontakozomuhely@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    <span>&nbsp;bontakozomuhely@gmail.com</span>
-                </a>
+    <div class="header-container">
+        <header class="header">
+            <div id="icon" class="icon"></div>
+            <!-- h1 class="heading">Your Heading</h1 -->
+            <div class="contacts">
+                <div class="contact-item">
+                    <a href="mailto:bontakozomuhely@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>&nbsp;bontakozomuhely@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.facebook.com/profile.php?id=61550286011921">
+                        <i class="fab fa-facebook"></i>
+                        <span>&nbsp;bontakozomuhely</span>
+                    </a>
+                </div>
             </div>
-            <div class="contact-item">
-                <a href="https://www.facebook.com/profile.php?id=61550286011921">
-                    <i class="fab fa-facebook"></i>
-                    <span>&nbsp;bontakozomuhely</span>
-                </a>
+        </header>
+        
+        <nav class="menu">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-        </div>
-    </header>
-    
-    <nav class="menu">
-        <ul>
-            <li id="submenu" class="submenu">
-                <a href="#" class="menu-link">Módszereink</a>
-                <ul class="submenu-content">
-                    <li class="active" onclick="changeContentToDSZIT()">DSZIT szemléletű foglalkozás</li>
-                    <li class="active" onclick="changeContentToAbility()">Képességfelmérések</li>
-                    <li>Kisiskolás csoportok</li>
-                    <li>Kamasz csoportok</li>
-                    <li>Integrált szülő-csecsemő konzultáció</a></li>
-                </ul>
-            </li>
-            <li class="active" onclick="changeContentToTurnToUs()">Mivel fordulhatnak hozzánk?</li>
-            <li class="active" onclick="changeContentToGoodToKnow()">Tudnivalók</a></li>
-            <li class="active" onclick="changeContentToIntroduction()">Bemutatkozás</a></li>
-            <li class="active" onclick="changeContentToContact()">Kapcsolat</a></li>
-            <li><a href="https://blog.hu/" target="_blank">Blog</a></li>
-        </ul>
-    </nav>
+            <ul class="menu-items">
+                <li id="submenu" class="submenu">
+                    <a href="#" class="menu-link">Módszereink</a>
+                    <ul class="submenu-content">
+                        <li class="active" onclick="changeContentToDSZIT()">DSZIT szemléletű foglalkozás</li>
+                        <li class="active" onclick="changeContentToAbility()">Képességfelmérések</li>
+                        <li>Kisiskolás csoportok</li>
+                        <li>Kamasz csoportok</li>
+                        <li>Integrált szülő-csecsemő konzultáció</a></li>
+                    </ul>
+                </li>
+                <li class="active" onclick="changeContentToTurnToUs()">Mivel fordulhatnak hozzánk?</li>
+                <li class="active" onclick="changeContentToGoodToKnow()">Tudnivalók</a></li>
+                <li class="active" onclick="changeContentToIntroduction()">Bemutatkozás</a></li>
+                <li class="active" onclick="changeContentToContact()">Kapcsolat</a></li>
+                <li><a href="https://blog.hu/" target="_blank">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="page-frame">
         <main id="page" class="page">
