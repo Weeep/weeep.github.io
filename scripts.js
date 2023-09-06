@@ -524,11 +524,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const submenuContent = this.querySelector(".submenu-content");
             submenuContent.style.display = "block";
         });
+
+        submenu.addEventListener("mouseover", function () {
+            const submenuContent = this.querySelector(".submenu-content");
+            submenuContent.style.display = "block";
+        });
     });
 
     document.getElementById('icon').addEventListener("click", () => {
         //location.replace('http://127.0.0.1:5500/');
         location.replace('https://weeep.github.io/');
+    })
+
+    document.querySelector('.menu-link').addEventListener("click", () => {
+        document.getElementById("methods-submenu").style.display = "block";
     })
 });
 
