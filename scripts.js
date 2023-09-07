@@ -1,6 +1,12 @@
 function changeContentToContact() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#kapcsolat` : `${url.substring(0, url.indexOf("#"))}#kapcsolat`;
+    
     document.getElementById("page").innerHTML = `
     <h1>Kapcsolat</h1>
+    <div class="content">
+    <img src="img/img02.jpg" class="float-image" style="width: 200px;">
     <p>A munkánk jellege miatt e-mailen tud bejelentkezni, mivel a foglalkozások közben nem tudjuk
     felvenni a telefont. Kérjük fogalmazza meg röviden a megkeresés okát, írja meg telefonszámát a
     további egyeztetés céljából!</p>
@@ -11,12 +17,19 @@ function changeContentToContact() {
     <p><br/><br/>A szülőkonzultációk és nem mozgás alapú képességfelmérések helyszíne pedig a Lollok Ház (3300 Eger, Sas utca 5-7.)</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.434256257855!2d20.38145211285984!3d47.88927966829329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408d7c4e9ea04b%3A0xc7bc4379eae9099e!2sEger%2C%20Sas%20u.%205%2C%203300!5e0!3m2!1sen!2shu!4v1693935373088!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p><br/><br/>A találkozáshoz előzetes egyeztetés szükséges mely során a kereteket megbeszéljük (idő, hely, ár).</p>
+    </div>
     `
 }
  
  function changeContentToGoodToKnow() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#tudnivalok` : `${url.substring(0, url.indexOf("#"))}#tudnivalok`;
+
     document.getElementById("page").innerHTML = `
     <h1>Tudnivalók</h1>
+    <div class="content">
+    <img src="img/img03.jpg" class="float-image" style="width: 200px;">
     <h3>Hogyan történik a bejelentkezés?</h3>
     <p>A bejelentkezés emailben történik, mivel a munkánk jellege miatt, napközben nem tudjuk felvenni a
     telefont. Kérjük, fogalmazzák meg néhány mondatban a megkeresés okát, és írják meg telefonos
@@ -84,10 +97,15 @@ function changeContentToContact() {
     <p>Ezen kívül a szülő kérhet a gyermek fejlődéséről, állapotáról szakvéleményt, ezt azonban csak a
     gyermekkel történő több alkalmas találkozást követően tudjuk szakmai szempontból felelősen
     kiállítani (a gyermek oldódásától, működésétől függően 2-4 alkalom).</p>
+    </div>
     `
  }
 
 function changeContentToIntroduction() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#intro` : `${url.substring(0, url.indexOf("#"))}#intro`;
+    
     document.getElementById("page").innerHTML = `
     <h1>Bemutatkozás</h1>
     <div class="introduction-container">
@@ -336,8 +354,14 @@ function changeContentToIntroduction() {
 }
 
 function changeContentToTurnToUs() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#mivel_fordulhatnak_hozzank` : `${url.substring(0, url.indexOf("#"))}#mivel_fordulhatnak_hozzank`;
+
     document.getElementById("page").innerHTML = `
     <h1>Mivel fordulhatnak hozzánk?</h1>
+    <div class="content">
+    <img src="img/img04.jpg" class="float-image" style="width: 200px;">
     <h3>Milyen nehézségekkel kereshetnek bennünket?</h3>
     <ul>
     <li>Tanulási/ magatartási/ beilleszkedési nehézség esetén
@@ -366,14 +390,19 @@ function changeContentToTurnToUs() {
     <p>A gyermeküket külön nevelő szülők esetében a közös megállapodás alapján, és a szakmai
     szempontok szerint vállalunk egyéni/ illetve közös konzultációt is. <b>Azonban gyermekelhelyezési
     per esetén nem tudunk állást foglalni egyik fél pártján sem. Ilyen célú megkeresésnek nem
-    tudunk eleget tenni, a közös munkára nincs lehetőség.</b></p>
+    tudunk eleget tenni, a közös munkára nincs lehetőség.</b></p></div>
     `
 }
 
 function changeContentToAbility() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#kepessegfelmeresek` : `${url.substring(0, url.indexOf("#"))}#kepessegfelmeresek`;
+    
     document.getElementById("page").innerHTML = `
     <h1>Képességfelmérések</h1>
-    
+    <div class="content">
+    <img src="img/img05.jpg" class="float-image" style="width: 200px;">
     <h3>SEED Fejlődési Skála (0-4 év)</h3>
     <p>A SEED Fejlődési Skála hét terület (Finommozgás, Nagymozgás, Szociális- érzelmi terület,
     Adaptív- gondolkodói terület, Beszéd és nyelv (expresszív és receptív nyelvi funkció),
@@ -401,12 +430,18 @@ function changeContentToAbility() {
     szabadon felhasználható, azonban abban megfogalmazott javaslataink kötelező érvénnyel
     nem bírnak az oktatási rendszerben! Az iskolába lépés megkezdésének halasztását a szülőnek
     az <a href="https://ohtan.oh.gov.hu/" target="_blank">Oktatási Hivatalnál</a> szükséges kezdeményeznie, általában az adott év január közepéig van
-    erre lehetőség.</p>`
+    erre lehetőség.</p></div>`
 }
 
 function changeContentToDSZIT() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#dszit` : `${url.substring(0, url.indexOf("#"))}#dszit`;
+
     document.getElementById("page").innerHTML = `
     <h1>DSZIT szemléletű foglalkozás</h1>
+    <div class="content">
+    <img src="img/img06.jpg" class="float-image" style="width: 200px;">
     <h3>Mi az az idegrendszeri éretlenség?</h3>
     
     <p>Az idegrendszerünk komplex, a teljes emberi működést sokféleképpen meghatározó tényező,
@@ -518,7 +553,7 @@ function changeContentToDSZIT() {
     <p>A meleg, elfogadó, biztonságos közeg és azok a játékszerek, amelyek a vesztibuláris, taktilis
     rendszerük, illetve saját testük érzékelése számára biztosítják az ingereket, együttesen segítik
     az agyféltekék közötti kapcsolat megerősödését, az idegrendszer harmonizációját, támogatják
-    a tanulási, megismerési folyamatokat.</p>`
+    a tanulási, megismerési folyamatokat.</p></div>`
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -589,6 +624,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+if(window.location.hash === "#kapcsolat") { document.querySelector('#contact').click(); }
+if(window.location.hash === "#dszit") { document.querySelector('#dszit').click(); }
+if(window.location.hash === "#kepessegfelmeresek") { document.querySelector('#ability').click(); }
+if(window.location.hash === "#mivel_fordulhatnak_hozzank") { document.querySelector('#turntous').click(); }
+if(window.location.hash === "#tudnivalok") { document.querySelector('#goodtoknow').click(); }
+if(window.location.hash === "#intro") { document.querySelector('#intro').click(); }
+if(window.location.hash === "#vha-intro-content") { document.querySelector('#intro').click(); }
+if(window.location.hash === "#eab-intro-content") { document.querySelector('#intro').click(); }
 
 
 
