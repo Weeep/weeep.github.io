@@ -7,6 +7,7 @@
 html {
     font-family: 'Lora', serif;
     overflow-y: scroll; 
+    scroll-behavior: smooth;
 }
 
 h3, h4 {
@@ -213,6 +214,11 @@ td, th {
     justify-content: space-around;
 }
 
+.introduction-container a, .introduction-container a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .ul-introduction {
     display: flex;
     flex-direction: column;
@@ -271,19 +277,19 @@ td, th {
     transition: 0.4s;
 }
 
-.active {
+.mt-active {
 
 }
 
-.menu-toggle.active .bar:nth-child(1) {
+.menu-toggle.mt-active .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.menu-toggle.active .bar:nth-child(2) {
+.menu-toggle.mt-active .bar:nth-child(2) {
     opacity: 0;
 }
 
-.menu-toggle.active .bar:nth-child(3) {
+.menu-toggle.mt-active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 

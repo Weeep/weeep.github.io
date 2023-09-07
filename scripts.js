@@ -91,10 +91,25 @@ function changeContentToIntroduction() {
     document.getElementById("page").innerHTML = `
     <h1>Bemutatkozás</h1>
     <div class="introduction-container">
-    <ul class="ul-introduction"><li class="li-introduction-img-eab" id="eab-intro-img"></li><li class="li-introduction" id="eab-intro">Elek Ágnes Borbála</li></ul>
-    <ul class="ul-introduction"><li class="li-introduction-img-vha" id="vha-intro-img"></li><li class="li-introduction" id="vha-intro">Váczy-Herman Ágnes</li></ul>
+        <a href="#eab-intro-content">
+            <ul class="ul-introduction">
+                <li class="li-introduction-img-eab" id="eab-intro-img"></li>
+                <li class="li-introduction" id="eab-intro">
+                    Elek Ágnes Borbála
+                </li>
+            </ul>
+        </a>
+
+        <a href="#vha-intro-content">
+            <ul class="ul-introduction">
+                <li class="li-introduction-img-vha" id="vha-intro-img"></li>
+                <li class="li-introduction" id="vha-intro">
+                    Váczy-Herman Ágnes
+                </li>
+            </ul>
+        </a>
     </div>
-    <div class="eab-intro-content">
+    <div class="eab-intro-content" id="eab-intro-content">
     <h3>Elek Ágnes Borbála, Tanácsadó szakpszichológus</h3>
     <p>2012 óta dolgozom pedagógiai szakszolgálatban. Itt azokkal a gyermekekkel foglalkozunk, akiket a
     szülők saját indíttatásból, vagy a gyermek pedagógusainak javaslatára hozhatnak hozzánk,
@@ -205,7 +220,7 @@ function changeContentToIntroduction() {
     </table>
     </div>
     
-    <div class="vha-intro-content">
+    <div class="vha-intro-content" id="vha-intro-content">
     <h3>Váczy-Herman Ágnes, pedagógiai szakpszichológus</h3>
     <p>2011 óta dolgozom
     pedagógiai szakszolgálatban. Munkám elsősorban pszichológiai tanácsadó, támogató és
@@ -507,28 +522,47 @@ function changeContentToDSZIT() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    const isMobile = (window.getComputedStyle(document.querySelector(".menu-toggle"), null).getPropertyValue('display') === 'block')
+
+    if(isMobile) {
+        const activeMenuPoints = document.querySelectorAll(".active");    
+        activeMenuPoints.forEach((activeMenuPoint) => {
+            activeMenuPoint.addEventListener("click", () => {
+                document.querySelector(".menu-toggle").click()
+            })
+        })
+    }
+
     const submenus = document.querySelectorAll(".submenu");
-
     submenus.forEach(function (submenu) {
-        submenu.addEventListener("click", function () {
-            const submenuContent = this.querySelector(".submenu-content");
-            submenuContent.style.display = "none";
-        });
+        if(isMobile) {
+            submenu.addEventListener("click", function () {
+                const submenuContent = this.querySelector(".submenu-content");
+                submenuContent.classList.toggle('displayBlock')
+            });
+        } else {
+            submenu.addEventListener("click", function () {
+                const submenuContent = this.querySelector(".submenu-content");
+                submenuContent.style.display = "none";
+            });
 
-        submenu.addEventListener("mouseout", function () {
-            const submenuContent = this.querySelector(".submenu-content");
-            submenuContent.style.display = "none";
-        });
+            submenu.addEventListener("mouseout", function () {
+                const submenuContent = this.querySelector(".submenu-content");
+                submenuContent.style.display = "none";
+                //console.log('out')
+            });
 
-        submenu.addEventListener("mouseover", function () {
-            const submenuContent = this.querySelector(".submenu-content");
-            submenuContent.style.display = "block";
-        });
+            submenu.addEventListener("mouseover", function () {
+                const submenuContent = this.querySelector(".submenu-content");
+                submenuContent.style.display = "block";
+                //console.log('over')
+            });
 
-        submenu.addEventListener("mouseover", function () {
-            const submenuContent = this.querySelector(".submenu-content");
-            submenuContent.style.display = "block";
-        });
+            /*submenu.addEventListener("mouseover", function () {
+                const submenuContent = this.querySelector(".submenu-content");
+                submenuContent.style.display = "block";
+            });*/
+        }
     });
 
     document.getElementById('icon').addEventListener("click", () => {
@@ -536,9 +570,9 @@ document.addEventListener("DOMContentLoaded", function () {
         location.replace('https://weeep.github.io/');
     })
 
-    document.querySelector('.menu-link').addEventListener("click", () => {
+    /*document.querySelector('.menu-link').addEventListener("click", () => {
         document.getElementById("methods-submenu").style.display = "block";
-    })
+    })*/
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -548,10 +582,10 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.addEventListener("click", function () {
         if (menuItems.style.display === "none" || menuItems.style.display === "") {
             menuItems.style.display = "block";
-            menuToggle.classList.add('active')
+            menuToggle.classList.add('mt-active')
         } else {
             menuItems.style.display = "none";
-            menuToggle.classList.remove('active')
+            menuToggle.classList.remove('mt-active')
         }
     });
 });
