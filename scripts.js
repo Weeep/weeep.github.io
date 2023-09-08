@@ -6,7 +6,6 @@ function changeContentToContact() {
     document.getElementById("page").innerHTML = `
     <h1>Kapcsolat</h1>
     <div class="content">
-    <img src="img/img02.jpg" class="float-image" style="width: 200px;">
     <p>A munkánk jellege miatt e-mailen tud bejelentkezni, mivel a foglalkozások közben nem tudjuk
     felvenni a telefont. Kérjük fogalmazza meg röviden a megkeresés okát, írja meg telefonszámát a
     további egyeztetés céljából!</p>
@@ -17,6 +16,7 @@ function changeContentToContact() {
     <p><br/><br/>A szülőkonzultációk és nem mozgás alapú képességfelmérések helyszíne pedig a Lollok Ház (3300 Eger, Sas utca 5-7.)</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.434256257855!2d20.38145211285984!3d47.88927966829329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408d7c4e9ea04b%3A0xc7bc4379eae9099e!2sEger%2C%20Sas%20u.%205%2C%203300!5e0!3m2!1sen!2shu!4v1693935373088!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p><br/><br/>A találkozáshoz előzetes egyeztetés szükséges mely során a kereteket megbeszéljük (idő, hely, ár).</p>
+    <img src="img/img02.jpg" style="width: 100%;">
     </div>
     `
 }
@@ -29,7 +29,6 @@ function changeContentToContact() {
     document.getElementById("page").innerHTML = `
     <h1>Tudnivalók</h1>
     <div class="content">
-    <img src="img/img03.jpg" class="float-image" style="width: 200px;">
     <h3>Hogyan történik a bejelentkezés?</h3>
     <p>A bejelentkezés emailben történik, mivel a munkánk jellege miatt, napközben nem tudjuk felvenni a
     telefont. Kérjük, fogalmazzák meg néhány mondatban a megkeresés okát, és írják meg telefonos
@@ -44,6 +43,7 @@ function changeContentToContact() {
     <p>A szülővel történő első találkozásokat, illetve a gyermek megismerését követően javaslatot teszünk a
     gyerek ellátására, amennyiben a javaslat a csoportban való részvétel, ez heti egy, állandó időpontban
     szervezett 45 perces foglalkozást jelent.</p>
+    <img src="img/img03.jpg" style="width: 100%;">
     <h3>Mi a szülő szerepe a közös munkafolyamatban?</h3>
     <p>Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
     rendszerszemlélet jegyében dolgozunk. A gyermek tünete nem független a környezetétől. A
@@ -361,7 +361,6 @@ function changeContentToTurnToUs() {
     document.getElementById("page").innerHTML = `
     <h1>Mivel fordulhatnak hozzánk?</h1>
     <div class="content">
-    <img src="img/img04.jpg" class="float-image" style="width: 200px;">
     <h3>Milyen nehézségekkel kereshetnek bennünket?</h3>
     <ul>
     <li>Tanulási/ magatartási/ beilleszkedési nehézség esetén
@@ -378,6 +377,7 @@ function changeContentToTurnToUs() {
     <li>Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
     fejlődése-6 éves korig)</li>
     </ul>
+    <img src="img/img04.jpg" style="width: 100%;">
     <h3>Amit nem tudunk vállalni</h3>
     <p>
     Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
@@ -402,7 +402,6 @@ function changeContentToAbility() {
     document.getElementById("page").innerHTML = `
     <h1>Képességfelmérések</h1>
     <div class="content">
-    <img src="img/img05.jpg" class="float-image" style="width: 200px;">
     <h3>SEED Fejlődési Skála (0-4 év)</h3>
     <p>A SEED Fejlődési Skála hét terület (Finommozgás, Nagymozgás, Szociális- érzelmi terület,
     Adaptív- gondolkodói terület, Beszéd és nyelv (expresszív és receptív nyelvi funkció),
@@ -418,6 +417,7 @@ function changeContentToAbility() {
     gyermekek könnyebben oldódnak az esetleges kezdeti szorongásból, a szülő támogathatja a
     gyermek részvételét.</p>
 
+    <img src="img/img05.jpg" style="width: 100%" />
     <h3>Iskolaérettségi vizsgálat (5-6 év)</h3>
     <p>A hatéves kori kötelező beiskolázás elbizonytalanító lehet sok szülő számára. Mi szükséges
     ahhoz, hogy egy gyermek magabiztosan kezdhesse meg iskolai tanulmányait?</p>
@@ -441,7 +441,6 @@ function changeContentToDSZIT() {
     document.getElementById("page").innerHTML = `
     <h1>DSZIT szemléletű foglalkozás</h1>
     <div class="content">
-    <img src="img/img06.jpg" class="float-image" style="width: 200px;">
     <h3>Mi az az idegrendszeri éretlenség?</h3>
     
     <p>Az idegrendszerünk komplex, a teljes emberi működést sokféleképpen meghatározó tényező,
@@ -458,7 +457,8 @@ function changeContentToDSZIT() {
     kezdve befolyással bírnak az idegrendszer fejlődésére. Amit viszont ezzel szemben biztosan
     állíthatunk, hogy az érés kódolva van a szervezetünkben, és különféle módszerekkel
     támogatható is. Egy ezek közül a dinamikus szenzoros integrációs terápia.</p>
-    
+
+    <img src="img/img06.jpg" style="width: 100%;" />
     <h3>Mit jelent a dinamikus szenzoros integrációs terápiás szemlélet?</h3>
     
     <p>A szenzoros integráció folyamatában a különféle érzékelési csatornákon bejövő, környezetből
