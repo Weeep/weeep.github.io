@@ -24,17 +24,26 @@ function changeContentToContact() {
  function changeContentToGoodToKnow() {
     const url = window.location.href
     window.location.href =
-        url.indexOf("#") === -1 ? `${url}#tudnivalok` : `${url.substring(0, url.indexOf("#"))}#tudnivalok`;
+        url.indexOf("#") === -1 ? `${url}#t` : `${url.substring(0, url.indexOf("#"))}#t`;
 
     document.getElementById("page").innerHTML = `
     <h1>Tudnivalók</h1>
+
+    <div class="page-agenda">
+        <a href="#t_1">&#9656; Hogyan történik a bejelentkezés?</a>
+        <a href="#t_2">&#9656; Az ellátás időbeli keretei</a>
+        <a href="#t_3">&#9656; Mi a szülő szerepe a közös munkafolyamatban?</a>
+        <a href="#t_4">&#9656; Áraink</a>
+    </div>
+    <hr/>
+
     <div class="content">
-    <h3>Hogyan történik a bejelentkezés?</h3>
+    <h3 id="t_1">Hogyan történik a bejelentkezés?</h3>
     <p>A bejelentkezés emailben történik, mivel a munkánk jellege miatt, napközben nem tudjuk felvenni a
     telefont. Kérjük, fogalmazzák meg néhány mondatban a megkeresés okát, és írják meg telefonos
     elérhetőségüket is, hogy a további egyeztetés céljából kereshessük Önöket!</p>
     <p>email: bontakozomuhely@gmail.com</p>
-    <h3>Az ellátás időbeli keretei</h3>
+    <h3 id="t_2">Az ellátás időbeli keretei</h3>
     <p>Gyakran felmerül a kérdés, hogy meddig szükséges a gyermek részvétele a munkafolyamatban? Erre
     sajnos nem tudunk a gyermek és családja megismerése nélkül választ adni. Az előrehaladás mértékét
     a személyes adottságok, a részvételi lehetőség gyakorisága és az egyéni életmód jellemzői is
@@ -44,7 +53,7 @@ function changeContentToContact() {
     gyerek ellátására, amennyiben a javaslat a csoportban való részvétel, ez heti egy, állandó időpontban
     szervezett 45 perces foglalkozást jelent.</p>
     <img src="img/img03.jpg" style="width: 100%;">
-    <h3>Mi a szülő szerepe a közös munkafolyamatban?</h3>
+    <h3 id="t_3">Mi a szülő szerepe a közös munkafolyamatban?</h3>
     <p>Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
     rendszerszemlélet jegyében dolgozunk. A gyermek tünete nem független a környezetétől. A
     viselkedési minták megértéséhez, az egészséges és hatékonyabb működésmód megtalálásához meg
@@ -58,7 +67,7 @@ function changeContentToContact() {
     osztjuk meg a tapasztalatainkat egymással. Természetesen a szülők igénye alapján, illetve
     amennyiben a szakmai szempontok indokolttá teszik, lehetőség van további konzultációs időpontot
     egyeztetni.</p>
-    <h3>Áraink</h3>
+    <h3 id="t_4">Áraink</h3>
     <table>
     <tr>
     <th>Óratípusa</th><th>Hossza</th><th>Árak/alkalom</th>
@@ -106,262 +115,28 @@ function changeContentToIntroduction() {
     window.location.href =
         url.indexOf("#") === -1 ? `${url}#intro` : `${url.substring(0, url.indexOf("#"))}#intro`;
     
-    document.getElementById("page").innerHTML = `
-    <h1>Bemutatkozás</h1>
-    <div class="introduction-container">
-        <a href="#eab-intro-content">
-            <ul class="ul-introduction">
-                <li class="li-introduction-img-eab" id="eab-intro-img"></li>
-                <li class="li-introduction" id="eab-intro">
-                    Elek Ágnes Borbála
-                </li>
-            </ul>
-        </a>
-
-        <a href="#vha-intro-content">
-            <ul class="ul-introduction">
-                <li class="li-introduction-img-vha" id="vha-intro-img"></li>
-                <li class="li-introduction" id="vha-intro">
-                    Váczy-Herman Ágnes
-                </li>
-            </ul>
-        </a>
-    </div>
-    <div class="eab-intro-content" id="eab-intro-content">
-    <h3>Elek Ágnes Borbála, Tanácsadó szakpszichológus</h3>
-    <p>2012 óta dolgozom pedagógiai szakszolgálatban. Itt azokkal a gyermekekkel foglalkozunk, akiket a
-    szülők saját indíttatásból, vagy a gyermek pedagógusainak javaslatára hozhatnak hozzánk,
-    képességeik felmérésére, viselkedési-, beilleszkedési-, fejlődési-, vagy egyéb érzelmi nehézségeik
-    hátterének feltérképezése céljából.</p>
-    <p>Szakmai érdeklődésem középpontjában a kezdetektől fogva a gyermekek állnak. Már gimnazista
-    koromban önkénteskedtem gyermekotthonban, táboroztattam gyerekeket. Ez a fajta elköteleződés,
-    bár kissé más formában, mindmáig az életem részét képezi.
-    Szakmai ismeretszerzésem folyamatáért rendkívül hálás vagyok volt gyakorlati-és
-    munkahelyeimnek, képzőimnek.</p>
-    <p>A gyerekekkel való munka és a saját önismeretei folyamataim is arra a felismerésre vezettek, hogy a
-    legörömtelibb kapcsolódások, amikben igazán otthon érzem magam szakemberként is, a mozgáson,
-    alkotó folyamatokon keresztül történnek.</p>
-    <p>Szerencsés vagyok, hogy egyetemista koromban megismerkedhettem a dinamikus szenzoros
-    integrációs (Ayres) terápiával, majd képződhettem is ezen a téren, és munkahelyeimen volt
-    lehetőségem tapasztalatokkal mélyíteni a megszerzett tudást.</p>
-    <p>Csodálom a gazdagságát, kreativitását, játékosságát ennek a módszernek, és csodálom mindeközben
-    a gyermekeket, akik elemi örömmel vesznek részt a folyamatban, és járják be a saját útjukat,
-    kommunikálnak a játék nyelvén, megjelenítik és feldolgozzák a konfliktusaikat, amíg mi
-    szakemberként ezt megtartó figyelemmel kísérjük, serkentjük. Lelkesítő számomra a folyamat,
-    amiben megismerhetem a velem együtt dolgozó szülőket, és gyermekeiket. Szeretem, ahogy kialakul
-    a bizalom és párbeszéd közöttünk, és így megszülethet a megértés a közös munka gyümölcseként.
-    Mindeközben rendkívül hasznosnak is tartom ezt a szemléletet, az idegrendszeri éretlenség
-    mibenlétének ismeretét. Értelmezhetővé teszi az eleinte sokszor ellentmondónak, érthetetlennek
-    látszó - szülőknek, gyermekeknek és pedagógusoknak - egyaránt nehézséget okozó tünetek
-    sokféleségét.</p>
-    <p>Nem lehet elégszer hangoztatni, hogy a felgyorsult világunk mozgásszegény, ingerekben azonban
-    kifejezetten gazdag voltát, ami a szociális kapcsolatok elszegényesedésével is együtt jár, az érlelődő
-    idegrendszer nehezen tudja követni. A tapasztalataim alapján ez jelentős mértékben hozzájárul a
-    manapság jelentkező elakadásokhoz.</p>
-
-    <p>A szülőkkel való munka folyamán az évek alatt erősödött a felismerésem, hogy a gyermekeknél
-    óvodás- iskolás korban problémát okozó tünetek, sok esetben már egész korai életszakaszban
-    megjelentek. A szülők többnyire érzékelték is azokat, azonban nem találtak megfelelő válaszokat a
-    felmerülő kérdéseikre. Ennek köszönhetően figyelmem egyre inkább a korai életszakasz fejlődése
-    felé irányult, tovább képeztem magam a csecsemőkori regulációs zavarok kezelése (integrált szülő-
-    csecsemő konzultáció), illetve a korai képességfelmérés (SEED Fejlődési Skála) irányában.
-    Ezeknek köszönhetően a látásmódom egyre komplexebbé vált, olyan értelmezési keretet,
-    munkamódot találtam, amit a mai kor nehézségei között hitelesnek, jól használhatónak érzek, és
-    aminek segítségével, a hozzám forduló kliensek számára egy elfogadó, inspiráló, a nehézségek
-    megélésével együtt is a megértést és változást támogató szemléletet biztosíthatok.
-    Az elmúlt tanévben alkalmunk nyílt együtt dolgozni Váczy-Herman Ágnes kolléganőmmel különféle
-    csoportokat vezetve. Az együttműködésünk minősége tovább növelte a csoportos munka iránti
-    elkötelezettségünket, inspiráló és eredményes volt a kettős vezetés.</p>
+    const defaultContent =document.getElementById("page").innerHTML
     
-    <h3>SZAKMAI TAPASZTALATOK</h3>
-    <table>
-    <tr><th style="width:20%">2020-22</th><th>Magyar Máltai Szeretetszolgálat</th></tr>
-    <tr><td>&nbsp;</td>
-    <td>A Fókuszban a gyermek pályázati projektben koragyerekkori szakértőként
-    tevékenykedtem Heves megye néhány településén, ahol a 3 év alatti gyermekek
-    fejlődését követtem nyomon, támogattam.</td></tr>
-        
-    <tr><th>2020-tól</th><th>Heves megyei Pedagógiai Szakszolgálat Füzesabonyi Tagintézménye</th></tr>
-    <tr><td>&nbsp;</td>
-    <td>Nevelési tanácsadás körébe tartozó tevékenységek, alkalomszerűen szakértői
-    tevékenység.</td></tr>
-
-    <tr><th>2015-től</th><th>Világítani Fogok Egyesület, önkéntes</th></tr>
-    <tr><td>&nbsp;</td>
-    <td>Hátrányos helyzetű gyerekek táboroztatása, családokkal kapcsolattartás.</td></tr>
-
-    <tr><th>2012-20</th><th>Fővárosi Pedagógiai Szakszolgálat IV. Ker. Tagintézménye, pszichológus</th></tr>
-    <tr><td>&nbsp;</td>
-    <td>Járási szintű szakértői vizsgálatok, nevelési tanácsadás körében végzett tevékenységek
-    (idegrendszeri éretlenség vizsgálata és kezelése, szülő-csecsemő konzultáció),
-    iskolapszichológusi feladatkörök.</td></tr>
-
-    <tr><th>2013-15</th><th>Palánta Alapítvány Óvoda, óvodapszichológus</th>
-    <tr><td>&nbsp;</td>
-    <td>Szülőcsoportok vezetése, csoportos megfigyelések, szülőkonzultáció.</td></tr>
-
-
-    <tr><th>2010</th><th>Óbudai Nevelési Tanácsadó, III. ker., 60 órás szakmai gyakorlat</th></tr>
-    <tr><td>&nbsp;</td>
-    <td>Diagnosztikai munka, Dszit csoportok támogatása.</td></tr>
+    document.getElementById("page").innerHTML = `${defaultContent}
     
-    <tr><th>2010</th><th>MRE Bethesda Gyermekkórház, családterápiás gyakorlat
-    <tr><td>&nbsp;</td>
-    <td>Családterápiás ülések részvétel, jegyzőkönyvezés.</td></tr>
-    
-    </table>
-    
-    <h3>TANULMÁNYOK, KÉPZÉSEK</h3>
-    <table>
-    <tr>
-    <th style="width:20%">2017</th><th>SEED Fejlődési Skála, 30 órás tanfolyam, Korai Fejlesztő Központ</th>
-    </tr>
-    
-    <tr>
-    <th>2014-2016</th><th>Integrált szülő- csecsemő konzultáció, SOTE</th>
-    </tr>
-    <tr>
-    <td>&nbsp;</td>
-    <td>Csecsemő- és kisgyermekkori regulációs zavarok kezelésére használt prevenciós,
-    intervenciós módszer.</td>
-    </tr>
-
-    <tr><th>2014-2018</th><th>Tanácsadó szakpszichológus képzés, ELTE</th></tr>
-    <td>&nbsp;</td>
-    <td>Családi és párkapcsolati tanácsadás specializáció</td></tr>
-    <tr><th>2014</th><th>Szenzoros integrációs terápiák: saját élmény csoport</th></tr>
-    <tr><th>2014</th><th>Szenzoros integrációs terápiák elmélete</th></tr>
-    <tr><th>2008-2009</th><th>120 óra pszichodráma sajátélmény</th></tr>
-    <tr><th>2009</th><th>Motivációs tréning, PPKE BTk</th></tr>
-    <tr><th>2005-2012</th><th>Pszichológia, Pedagógia, Pázmány Péter Katolikus Egyetem BTK (Klinikai
-    pszichológia-, Család- és valláspszichológia szakirány)</th></tr>
-    </table>
-    </div>
-    
-    <div class="vha-intro-content" id="vha-intro-content">
-    <h3>Váczy-Herman Ágnes, pedagógiai szakpszichológus</h3>
-    <p>2011 óta dolgozom
-    pedagógiai szakszolgálatban. Munkám elsősorban pszichológiai tanácsadó, támogató és
-    fejlesztő tevékenységen alapul.
-    Tevékenységem része az óvodával, iskolával összefüggő tanulási, magatartási, beilleszkedési
-    és egyéb pszichés problémák esetén a szülőkkel, pedagógusokkal közös konzultációs
-    folyamatban megoldást keresni, továbbá a gyermekekkel végzett egyéni és csoportos fejlesztő
-    foglalkozások keretében történő segítségnyújtás. A csoportos pszichológiai ellátás óvodáskorú
-    gyerekek esetében elsősorban mozgásalapú, érést, fejlődést, lelki összerendeződést segítő,
-    iskoláskorú gyerekek esetében személyiségfejlesztő és társas hatékonyságot fejlesztő
-    foglalkozást jelent.</p>
-    <p>A szülőkkel, pedagógusokkal közös konzultációs folyamatban azt tapasztaltam, hogy a
-    szülők, pedagógusok sokszor eszköztelennek és tehetetlennek érzik magukat a modernkori
-    gyermekek vonatkozásában felmerülő problémák esetén. Emiatt a konfliktusok megoldásában
-    gyakran aktivizálódnak rossz kommunikációs beidegződések, ösztönös minták, tévhitekre
-    épülő megoldási utak. Ezeknek hatására azonban a problémák nem oldódnak meg, hanem
-    ellenkezőleg, egy negatív spirál indul be. A nem megfelelő problémakezelés eredménye egyre
-    több konfliktus, egyre mélyülő ellentétek, egyre kezelhetetlenebb gyermek.
-    </p><p>A negatív spirál ugyanakkor pozitív irányban is működik. Tudatosságunkon és a belefektetett
-    munkán múlik, hogy az önmagát erősítő folyamat milyen irányt vesz. Szerencsés vagyok
-    abban, hogy számos esetben kísérhettem a folyamatot, aminek során a felismerések, belátás,
-    elfogadás talaján a sodródás helyét a tudatos irányítás vette át.
-    </p><p>A gyerekekkel végzett pszichológiai fejlesztő tevékenységeim közül különösen kedves
-    számomra az óvodáskorú gyermekekkel való mozgásalapú foglalkozás. Lenyűgöz, ahogy
-    ezek a gyerekek felszabadulnak egy lehetőségeket, kihívásokat kecsegtető térben, közegben,
-    ahogy örömmel, és fáradtságot nem kímélve bontakoztatják ki képességeiket, és mutatják meg
-    személyiségük mintáit. Megtapasztalhattam, hogy a gyerekek miközben felhőtlenül élik
-    gyermeki mivoltukat, belső hajtóerejük ösztönösen azok felé a kihívások felé tereli őket, ami
-    egyúttal fejlődésüket is szolgálja
-    </p><p>Pszichológusi minőségem mellet fontosnak tartom megemlíteni, hogy két gyermek
-    édesanyja is vagyok, akiket férjemmel együtt nevelünk. A magánéleti folyamat és tapasztalás,
-    amelynek során családdá váltunk, hozzájárult szakmabeli szemléletem formálódásához is.
-    Megtapasztaltam, hogy hiába az elméleti tudás, a gyermekes lét számtalan kihívást tartogat,
-    ennek során elkerülhetetlenül szembesülünk saját korlátainkkal is. Ez nehéz lelki út, úgy
-    vélem, minden szülőnek van olyan időszaka, amikor elkel számára a támogatás, az
-    együttérzés.
-    </p><p>Hiszek a kapcsolat, kapcsolódás erejében, legyen szó felnőttek közötti, felnőtt-gyerek,
-    vagy gyerekek közötti kapcsolatról. Azt gondolom, hogy bármikor képesek vagyunk fejlődni
-    abban, hogy egészségesen, őszintén tudjunk kapcsolódni egymáshoz, és önmagunkhoz.
-    Pszichológiai munkám során legnagyobb örömöm, amikor megszületik a közös munka
-    eredménye, a közös megértése a reakciók mögött húzódó okoknak. A megértésből fakadó
-    figyelem, és összehangolódás a kapcsolat megerősödéséhez vezet, mely aztán hozzájárul a
-    személyes növekedéshez, és bázisa, támasza, erőforrása lesz gyermeknek, felnőttnek
-    egyaránt.
-    </p><p>Az elmúlt tanévben Elek Ágnes tanácsadó szakpszichológus kollégámmal vezettünk
-    közösen dinamikus szenzoros integrációs szemléletű óvodás csoportokat, illetve kamaszok és
-    kiskamaszok számára szociális készségfejlesztő csoportokat. A közös működés
-    gyümölcsözőnek bizonyult, élünk a kettős vezetés nyújtotta előnyökkel, ami által magasabb
-    szakmai színvonalat is képviselhetünk. Mivel tapasztaljuk, hogy egyre növekszik azon
-    gyerekek száma, akiknél éretlen, vagy nem megfelelően, eltérően működő idegrendszeri
-    működés jellemző, fókuszunkban elsősorban dinamikus szenzoros integrációs foglalkozások
-    lesznek. A DSZIT szemléletű ellátásnak köszönhető magasabb idegrendszeri integrációs szint
-    elérése mellet, a szülőkonzultáció folyamatában a támogatáson, megértésen keresztül
-    lehetőség nyílik a szülők gyerekeikkel való kapcsolódásának elmélyítésére is.<p>
-    
-    <h3>SZAKMAI TAPASZTALAT</h3>
-
-    <table>
-    
-    <tr><th style="width:20%">2011-</th><th>Heves megyei Pedagógiai Szakszolgálat Füzesabonyi Tagintézménye</th></tr>
-    <tr><td>&nbsp;</td>
-    <td>Pszichológus- nevelési tanácsadási tevékenység, iskolapszichológiai,
-    óvodapszichológiai tevékenység, szakértői tevékenység, iskola- és
-    óvodapszichológus feladatok koordinátora munkakör.</td></tr>
-
-    <tr><th>2009-2010</th><td><b>Trenkwalder</b>, Debrecen</td></tr>
-    <tr><td>&nbsp;</td>
-    <td>Pszichológus- munkaerő közvetítés</td></tr>
-
-    </table>
-
-    <h3>TANULMÁNYOK, KÉPZÉSEK</h3>
-    <table>
-    <tr><th style="width:20%">2019</th><td><b>Pedagógiai Szakpszichológus (4 félév)</b>, Eötvös Lóránd Tudományegyetem Pedagógiai és Pszichológiai Kar</td></tr>
-    <tr><th>2010</th><td><b>Okleveles Pszichológus (10 félév)</b>, Debreceni Egyetem Bölcsésztudományi Kar</td></tr>
-    <tr><th>2010</th><td><b>Pszichológus szakfordító (angol nyelvű) (4 félév)</b>, Debreceni Egyetem Bölcsésztudományi Kar</td></tr>
-    </table>
-    </div>
     `
-
-    document.getElementById('eab-intro').addEventListener("click", () => {
-        document.getElementById('vha-intro').classList.remove('li-introduction-opened')
-        document.querySelector('.vha-intro-content').classList.remove('vha-intro-content-opened')
-
-        document.getElementById('eab-intro').classList.toggle('li-introduction-opened')
-        document.querySelector('.eab-intro-content').classList.toggle('eab-intro-content-opened')
-    })
-
-    document.getElementById('eab-intro-img').addEventListener("click", () => {
-        document.getElementById('vha-intro').classList.remove('li-introduction-opened')
-        document.querySelector('.vha-intro-content').classList.remove('vha-intro-content-opened')
-
-        document.getElementById('eab-intro').classList.toggle('li-introduction-opened')
-        document.querySelector('.eab-intro-content').classList.toggle('eab-intro-content-opened')
-    })
-
-
-    document.getElementById('vha-intro').addEventListener("click", () => {
-        document.getElementById('eab-intro').classList.remove('li-introduction-opened')
-        document.querySelector('.eab-intro-content').classList.remove('eab-intro-content-opened')
-
-        document.getElementById('vha-intro').classList.toggle('li-introduction-opened')
-        document.querySelector('.vha-intro-content').classList.toggle('vha-intro-content-opened')
-    })
-
-    document.getElementById('vha-intro-img').addEventListener("click", () => {
-        document.getElementById('eab-intro').classList.remove('li-introduction-opened')
-        document.querySelector('.eab-intro-content').classList.remove('eab-intro-content-opened')
-
-        document.getElementById('vha-intro').classList.toggle('li-introduction-opened')
-        document.querySelector('.vha-intro-content').classList.toggle('vha-intro-content-opened')
-    })
 }
 
 function changeContentToTurnToUs() {
     const url = window.location.href
     window.location.href =
-        url.indexOf("#") === -1 ? `${url}#mivel_fordulhatnak_hozzank` : `${url.substring(0, url.indexOf("#"))}#mivel_fordulhatnak_hozzank`;
+        url.indexOf("#") === -1 ? `${url}#mfh` : `${url.substring(0, url.indexOf("#"))}#mfh`;
 
     document.getElementById("page").innerHTML = `
     <h1>Mivel fordulhatnak hozzánk?</h1>
+    <div class="page-agenda">
+    <a href="#mfh_1">&#9656; Milyen nehézségekkel kereshetnek bennünket?</a>
+    <a href="#mfh_2">&#9656; Amit nem tudunk vállalni!</a>
+    </div>
+    <hr/>
+
     <div class="content">
-    <h3>Milyen nehézségekkel kereshetnek bennünket?</h3>
+    <h3 id="mfh_1">Milyen nehézségekkel kereshetnek bennünket?</h3>
     <ul>
     <li>Tanulási/ magatartási/ beilleszkedési nehézség esetén
     <li>Szorongásos panaszok esetén</li>
@@ -378,7 +153,7 @@ function changeContentToTurnToUs() {
     fejlődése-6 éves korig)</li>
     </ul>
     <img src="img/img05.jpg" style="width: 100%;">
-    <h3>Amit nem tudunk vállalni</h3>
+    <h3 id="mfh_2">Amit nem tudunk vállalni</h3>
     <p>
     Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
     iskolaérettségi vizsgálat), melyet a belátásuk szerint használhatnak. Továbbá kölcsönös igény esetén
@@ -397,12 +172,19 @@ function changeContentToTurnToUs() {
 function changeContentToAbility() {
     const url = window.location.href
     window.location.href =
-        url.indexOf("#") === -1 ? `${url}#kepessegfelmeresek` : `${url.substring(0, url.indexOf("#"))}#kepessegfelmeresek`;
+        url.indexOf("#") === -1 ? `${url}#kf` : `${url.substring(0, url.indexOf("#"))}#kf`;
     
     document.getElementById("page").innerHTML = `
     <h1>Képességfelmérések</h1>
+
+    <div class="page-agenda">
+        <a href="#kf_1">&#9656; SEED Fejlődési Skála (0-4 év)</a>
+        <a href="#kf_2">&#9656; Iskolaérettségi vizsgálat (5-6 év)</a>
+    </div>
+    <hr/>
+
     <div class="content">
-    <h3>SEED Fejlődési Skála (0-4 év)</h3>
+    <h3 id="kf_1">SEED Fejlődési Skála (0-4 év)</h3>
     <p>A SEED Fejlődési Skála hét terület (Finommozgás, Nagymozgás, Szociális- érzelmi terület,
     Adaptív- gondolkodói terület, Beszéd és nyelv (expresszív és receptív nyelvi funkció),
     Táplálkozás, Öltözködés- tisztálkodás) felmérésével ad információt a gyermek erősségeiről,
@@ -418,7 +200,7 @@ function changeContentToAbility() {
     gyermek részvételét.</p>
 
     <img src="img/img04.jpg" style="width: 100%" />
-    <h3>Iskolaérettségi vizsgálat (5-6 év)</h3>
+    <h3 id="kf_2">Iskolaérettségi vizsgálat (5-6 év)</h3>
     <p>A hatéves kori kötelező beiskolázás elbizonytalanító lehet sok szülő számára. Mi szükséges
     ahhoz, hogy egy gyermek magabiztosan kezdhesse meg iskolai tanulmányait?</p>
     <p>A megfelelő érettségnek testi-, lelki és kognitív tényezői egyaránt vannak. Így vizsgálatunk is
@@ -440,8 +222,19 @@ function changeContentToDSZIT() {
 
     document.getElementById("page").innerHTML = `
     <h1>DSZIT szemléletű foglalkozás</h1>
+    <div class="page-agenda">
+        <a href="#dszit_1">&#9656; Mi az az idegrendszeri éretlenség?</a>
+        <a href="#dszit_2">&#9656; Mit jelent a dinamikus szenzoros integrációs terápiás szemlélet?</a>
+        <a href="#dszit_3">&#9656; Ki lehet érintett?</a>
+        <a href="#dszit_4">&#9656; Csoportos vagy egyéni ellátás?</a>
+        <a class="sub-agenda" href="#dszit_41">&#9656; Miért igyekszünk zárt csoportokkal dolgozni?</a>
+        <a class="sub-agenda" href="#dszit_42">&#9656; Mitől függ, hogy egyéni vagy csoportos ellátást javaslunk?</a>
+        <a class="sub-agenda" href="#dszit_43">&#9656; Ez csak játék?!</a>
+    </div>
+    <hr/>
+
     <div class="content">
-    <h3>Mi az az idegrendszeri éretlenség?</h3>
+    <h3 id="dszit_1">Mi az az idegrendszeri éretlenség?</h3>
     
     <p>Az idegrendszerünk komplex, a teljes emberi működést sokféleképpen meghatározó tényező,
     összetettségét nehéz is igazán átlátni laikusként. A fejlődését azonban nyomon tudjuk
@@ -459,7 +252,7 @@ function changeContentToDSZIT() {
     támogatható is. Egy ezek közül a dinamikus szenzoros integrációs terápia.</p>
 
     <img src="img/img01.jpg" style="width: 100%;" />
-    <h3>Mit jelent a dinamikus szenzoros integrációs terápiás szemlélet?</h3>
+    <h3 id="dszit_2">Mit jelent a dinamikus szenzoros integrációs terápiás szemlélet?</h3>
     
     <p>A szenzoros integráció folyamatában a különféle érzékelési csatornákon bejövő, környezetből
     származó információ megfelelő feldolgozása, és az arra való adaptív válasz kialakítása
@@ -480,7 +273,7 @@ function changeContentToDSZIT() {
     módon hat, az idegrendszer érlelése mellett hozzájárul az egész személyiség harmonikusabb
     működéséhez.</p>
 
-    <h3>Ki lehet érintett?</h3>
+    <h3 id="dszit_3">Ki lehet érintett?</h3>
     <ul>
     <li>A gyermekek, akik nyugtalan, nehezen altatható csecsemők voltak, esetleg manapság is
     nehézséggel küzdenek az alvás terén.</li>
@@ -516,8 +309,8 @@ function changeContentToDSZIT() {
     <li>Az “egyemberes” gyermekek</li>
     </ul>
     
-    <h3>Csoportos vagy egyéni ellátás?</h3>
-    <h4>Miért igyekszünk zárt csoportokkal dolgozni?</h4>
+    <h3 id="dszit_4">Csoportos vagy egyéni ellátás?</h3>
+    <h4 id="dszit_41">Miért igyekszünk zárt csoportokkal dolgozni?</h4>
     <p>Alapvetően állandó csoportokkal dolgozunk, mert a gyermekek biztonságérzetéhez, illetve a
     kapcsolódásaik minőségi változásához a kiszámíthatóság szükséges. A közös térben az
     együttes élménynek nagy szerepe van. A csoportban a gyermekek közös szabályokat,
@@ -528,7 +321,7 @@ function changeContentToDSZIT() {
     kommunikálni az érzéseket, feszültségeket konstruktív módon. Ehhez a lassú, közös
     növekedéshez, éréshez azonban elengedhetetlen az állandó jelenlét.</p>
     
-    <h4>Mitől függ, hogy egyéni vagy csoportos ellátást javaslunk?</h4>
+    <h4 id="dszit_42">Mitől függ, hogy egyéni vagy csoportos ellátást javaslunk?</h4>
     <p>A tapasztalataink alapján az idegrendszeri éretlenség következtében kialakult viselkedési
     nehézségek esetén a csoportos ellátást javasoljuk általánosságban. A fenti bekezdésben
     olvashatók a csoportos élmény előnyei. Hiszünk abban, hogy a csoporthelyzetben a
@@ -540,7 +333,7 @@ function changeContentToDSZIT() {
     teheti a gyermek egyéni ellátását. Az ellátás formájára való javaslattételünket minden esetben
     a szülővel történő egyeztetés és a gyermekkel való találkozás előzi meg.</p>
     
-    <h4>Ez csak játék?!</h4>
+    <h4 id="dszit_43">Ez csak játék?!</h4>
     <p>A sokszínű tevékenységet felkínáló tér és eszközök kíváncsiságot, érdeklődést felkeltő,
     mozgásra hívó, örömöt, lelkesedést kiváltó folyamatot indítanak a gyerekekben, tehát valóban
     játszanak.</p>
@@ -605,6 +398,11 @@ document.addEventListener("DOMContentLoaded", function () {
         location.replace('https://weeep.github.io/');
     })
 
+    document.getElementById('intro').addEventListener("click", () => {
+        //location.replace('http://127.0.0.1:5500/');
+        location.replace('https://weeep.github.io/');
+    })
+
     /*document.querySelector('.menu-link').addEventListener("click", () => {
         document.getElementById("methods-submenu").style.display = "block";
     })*/
@@ -623,13 +421,47 @@ document.addEventListener("DOMContentLoaded", function () {
             menuToggle.classList.remove('mt-active')
         }
     });
+
+    document.getElementById('eab-intro').addEventListener("click", () => {
+        document.getElementById('vha-intro').classList.remove('li-introduction-opened')
+        document.querySelector('.vha-intro-content').classList.remove('vha-intro-content-opened')
+
+        document.getElementById('eab-intro').classList.toggle('li-introduction-opened')
+        document.querySelector('.eab-intro-content').classList.toggle('eab-intro-content-opened')
+    })
+
+    document.getElementById('eab-intro-img').addEventListener("click", () => {
+        document.getElementById('vha-intro').classList.remove('li-introduction-opened')
+        document.querySelector('.vha-intro-content').classList.remove('vha-intro-content-opened')
+
+        document.getElementById('eab-intro').classList.toggle('li-introduction-opened')
+        document.querySelector('.eab-intro-content').classList.toggle('eab-intro-content-opened')
+    })
+
+    document.getElementById('vha-intro').addEventListener("click", () => {
+        document.getElementById('eab-intro').classList.remove('li-introduction-opened')
+        document.querySelector('.eab-intro-content').classList.remove('eab-intro-content-opened')
+
+        document.getElementById('vha-intro').classList.toggle('li-introduction-opened')
+        document.querySelector('.vha-intro-content').classList.toggle('vha-intro-content-opened')
+    })
+
+    document.getElementById('vha-intro-img').addEventListener("click", () => {
+        document.getElementById('eab-intro').classList.remove('li-introduction-opened')
+        document.querySelector('.eab-intro-content').classList.remove('eab-intro-content-opened')
+
+        document.getElementById('vha-intro').classList.toggle('li-introduction-opened')
+        document.querySelector('.vha-intro-content').classList.toggle('vha-intro-content-opened')
+    })
 });
 
 if(window.location.hash === "#kapcsolat") { document.querySelector('#contact').click(); }
-if(window.location.hash === "#dszit") { document.querySelector('#dszit').click(); }
-if(window.location.hash === "#kepessegfelmeresek") { document.querySelector('#ability').click(); }
-if(window.location.hash === "#mivel_fordulhatnak_hozzank") { document.querySelector('#turntous').click(); }
-if(window.location.hash === "#tudnivalok") { document.querySelector('#goodtoknow').click(); }
+if(window.location.hash.includes("#dszit")) { document.querySelector('#dszit').click(); }
+if(window.location.hash.includes("#kf")) { document.querySelector('#ability').click(); }
+if(window.location.hash.includes("#mfh")) {
+    //document.getElementById('turntous').style.backgroundColor="#666";
+    document.querySelector('#turntous').click(); }
+if(window.location.hash.includes("#t")) { document.querySelector('#goodtoknow').click(); }
 if(window.location.hash === "#intro") { document.querySelector('#intro').click(); }
 if(window.location.hash === "#vha-intro-content") { document.querySelector('#intro').click(); }
 if(window.location.hash === "#eab-intro-content") { document.querySelector('#intro').click(); }

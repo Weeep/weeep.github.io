@@ -14,6 +14,14 @@ h3, h4 {
     padding: .5rem 0;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
 .header-container {
     /*width: 70%;*/
     margin: auto;
@@ -24,8 +32,8 @@ h3, h4 {
 .header {
     background-image: url('img/heading-image.jpg');
     background-size: cover;
-    background-position: center top -42vw; /* Adjusted position */
-    height: 18vw;
+    background-position: center top -46vw; /* Adjusted position */
+    height: 12vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,14 +42,15 @@ h3, h4 {
 
 /* Styling for the circle icon */
 .icon {
-    width: 16vw;
-    height: 16vw;
+    width: 12vw;
+    height: 12vw;
     background-image: url('img/logo.jpg');
     background-size: cover;
     background-position: center center; /*top -42vw; /* Adjusted position */
     border-radius: 50%;
     /*position: absolute;*/
     margin-left: 2rem;
+    margin-bottom: -2.5rem;
     cursor: pointer;
 }
 
@@ -92,9 +101,8 @@ h3, h4 {
 }
 
 .menu li {
-    margin: 0 15px;
     width: max-content;
-    padding: .7rem 0;
+    padding: .7rem 15px;
     transition: background-color 500ms;
     font-family: 'Montserrat', serif;
     color: gray;
@@ -105,8 +113,8 @@ h3, h4 {
     cursor: pointer;
 }
 
-.menu .active:hover {
-    background-color: gray;
+.menu .active:hover, .submenu:hover {
+    background-color: #666;
 }
 
 .menu a {
@@ -163,7 +171,7 @@ h3, h4 {
     padding-bottom: 2rem;
     font-family: 'Arima', serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .page ul {
@@ -184,6 +192,26 @@ h3, h4 {
     width: 50px; /* Adjust the image width as needed */
     height: auto; /* Maintain aspect ratio */
     padding: .5rem;
+}
+
+.page-agenda {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-bottom: 20px;
+    margin: -1.8rem 0 0 1rem;
+    font-size: .9rem;
+}
+
+.page-agenda > a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-agenda > a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #dddddd;
 }
 
 p {
