@@ -10,12 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-h1 {
-    font-family: 'Arima', serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
 h3, h4 {
     padding: .5rem 0;
 }
@@ -167,6 +161,9 @@ h3, h4 {
 
 .page h1 {
     padding-bottom: 2rem;
+    font-family: 'Arima', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .page ul {

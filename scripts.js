@@ -38,7 +38,7 @@ function changeContentToContact() {
     <p>Gyakran felmerül a kérdés, hogy meddig szükséges a gyermek részvétele a munkafolyamatban? Erre
     sajnos nem tudunk a gyermek és családja megismerése nélkül választ adni. Az előrehaladás mértékét
     a személyes adottságok, a részvételi lehetőség gyakorisága és az egyéni életmód jellemzői is
-    befolyásolják. A szemlélet nondirektivitása, illetve komplex volta miatt általában egy tanévet
+    befolyásolják.</p><p>A DSZIT esetén a szemlélet nondirektivitása, illetve komplex volta miatt általában egy tanévet
     szoktunk javasolni kezdésképpen.</p>
     <p>A szülővel történő első találkozásokat, illetve a gyermek megismerését követően javaslatot teszünk a
     gyerek ellátására, amennyiben a javaslat a csoportban való részvétel, ez heti egy, állandó időpontban
@@ -54,7 +54,7 @@ function changeContentToContact() {
     receptet nyújtani. Azonban a kölcsönösen aktív részvételünk sikeressé teheti az együttműködést.
     Hisszük, hogy több szem többet lát, örömünkre szolgál, ha mindkét szülő be tud kapcsolódni a közös
     munkába.</p>
-    <p>A hozzánk járó gyermekek szüleivel minimum félévente egy alkalommal szülőkonzultáció keretében
+    <p>A csoportjainkba járó gyermekek szüleivel minimum félévente egy alkalommal szülőkonzultáció keretében
     osztjuk meg a tapasztalatainkat egymással. Természetesen a szülők igénye alapján, illetve
     amennyiben a szakmai szempontok indokolttá teszik, lehetőség van további konzultációs időpontot
     egyeztetni.</p>
@@ -172,7 +172,7 @@ function changeContentToIntroduction() {
     Az elmúlt tanévben alkalmunk nyílt együtt dolgozni Váczy-Herman Ágnes kolléganőmmel különféle
     csoportokat vezetve. Az együttműködésünk minősége tovább növelte a csoportos munka iránti
     elkötelezettségünket, inspiráló és eredményes volt a kettős vezetés.</p>
-    Szakmai önéletrajz -tovább ???????
+    
     <h3>SZAKMAI TAPASZTALATOK</h3>
     <table>
     <tr><th style="width:20%">2020-22</th><th>Magyar Máltai Szeretetszolgálat</th></tr>
@@ -203,7 +203,7 @@ function changeContentToIntroduction() {
 
     <tr><th>2010</th><th>Óbudai Nevelési Tanácsadó, III. ker., 60 órás szakmai gyakorlat</th></tr>
     <tr><td>&nbsp;</td>
-    <td>Diagnosztikai munka, Dszit csoportok támogatása).</td></tr>
+    <td>Diagnosztikai munka, Dszit csoportok támogatása.</td></tr>
     
     <tr><th>2010</th><th>MRE Bethesda Gyermekkórház, családterápiás gyakorlat
     <tr><td>&nbsp;</td>
@@ -233,7 +233,7 @@ function changeContentToIntroduction() {
     <tr><th>2014</th><th>Szenzoros integrációs terápiák elmélete</th></tr>
     <tr><th>2008-2009</th><th>120 óra pszichodráma sajátélmény</th></tr>
     <tr><th>2009</th><th>Motivációs tréning, PPKE BTk</th></tr>
-    <tr><th>2005-2012</th><th>Pszichológia MA, Pedagógia MA, Pázmány Péter Katolikus Egyetem BTK (Klinikai
+    <tr><th>2005-2012</th><th>Pszichológia, Pedagógia, Pázmány Péter Katolikus Egyetem BTK (Klinikai
     pszichológia-, Család- és valláspszichológia szakirány)</th></tr>
     </table>
     </div>
@@ -377,7 +377,7 @@ function changeContentToTurnToUs() {
     <li>Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
     fejlődése-6 éves korig)</li>
     </ul>
-    <img src="img/img04.jpg" style="width: 100%;">
+    <img src="img/img05.jpg" style="width: 100%;">
     <h3>Amit nem tudunk vállalni</h3>
     <p>
     Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
@@ -417,7 +417,7 @@ function changeContentToAbility() {
     gyermekek könnyebben oldódnak az esetleges kezdeti szorongásból, a szülő támogathatja a
     gyermek részvételét.</p>
 
-    <img src="img/img05.jpg" style="width: 100%" />
+    <img src="img/img04.jpg" style="width: 100%" />
     <h3>Iskolaérettségi vizsgálat (5-6 év)</h3>
     <p>A hatéves kori kötelező beiskolázás elbizonytalanító lehet sok szülő számára. Mi szükséges
     ahhoz, hogy egy gyermek magabiztosan kezdhesse meg iskolai tanulmányait?</p>
@@ -458,7 +458,7 @@ function changeContentToDSZIT() {
     állíthatunk, hogy az érés kódolva van a szervezetünkben, és különféle módszerekkel
     támogatható is. Egy ezek közül a dinamikus szenzoros integrációs terápia.</p>
 
-    <img src="img/img06.jpg" style="width: 100%;" />
+    <img src="img/img01.jpg" style="width: 100%;" />
     <h3>Mit jelent a dinamikus szenzoros integrációs terápiás szemlélet?</h3>
     
     <p>A szenzoros integráció folyamatában a különféle érzékelési csatornákon bejövő, környezetből
