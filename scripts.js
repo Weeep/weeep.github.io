@@ -52,8 +52,9 @@ function changeContentToContact() {
     <p>A szülővel történő első találkozásokat, illetve a gyermek megismerését követően javaslatot teszünk a
     gyerek ellátására, amennyiben a javaslat a csoportban való részvétel, ez heti egy, állandó időpontban
     szervezett 45 perces foglalkozást jelent.</p>
-    <img src="img/img03.jpg" style="width: 100%;">
+    
     <h3 id="t_3">Mi a szülő szerepe a közös munkafolyamatban?</h3>
+    <img src="img/img03.jpg" style="width: 100%;">
     <p>Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
     rendszerszemlélet jegyében dolgozunk. A gyermek tünete nem független a környezetétől. A
     viselkedési minták megértéséhez, az egészséges és hatékonyabb működésmód megtalálásához meg
@@ -129,6 +130,7 @@ function changeContentToTurnToUs() {
 
     document.getElementById("page").innerHTML = `
     <h1>Mivel fordulhatnak hozzánk?</h1>
+    
     <div class="page-agenda">
     <a href="#mfh_1">&#9656; Milyen nehézségekkel kereshetnek bennünket?</a>
     <a href="#mfh_2">&#9656; Amit nem tudunk vállalni!</a>
@@ -152,8 +154,8 @@ function changeContentToTurnToUs() {
     <li>Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
     fejlődése-6 éves korig)</li>
     </ul>
-    <img src="img/img05.jpg" style="width: 100%;">
     <h3 id="mfh_2">Amit nem tudunk vállalni</h3>
+    <img src="img/img05.jpg" style="width: 100%;">
     <p>
     Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
     iskolaérettségi vizsgálat), melyet a belátásuk szerint használhatnak. Továbbá kölcsönös igény esetén
@@ -199,8 +201,8 @@ function changeContentToAbility() {
     gyermekek könnyebben oldódnak az esetleges kezdeti szorongásból, a szülő támogathatja a
     gyermek részvételét.</p>
 
-    <img src="img/img04.jpg" style="width: 100%" />
     <h3 id="kf_2">Iskolaérettségi vizsgálat (5-6 év)</h3>
+    <img src="img/img04.jpg" style="width: 100%" />
     <p>A hatéves kori kötelező beiskolázás elbizonytalanító lehet sok szülő számára. Mi szükséges
     ahhoz, hogy egy gyermek magabiztosan kezdhesse meg iskolai tanulmányait?</p>
     <p>A megfelelő érettségnek testi-, lelki és kognitív tényezői egyaránt vannak. Így vizsgálatunk is
@@ -251,9 +253,9 @@ function changeContentToDSZIT() {
     állíthatunk, hogy az érés kódolva van a szervezetünkben, és különféle módszerekkel
     támogatható is. Egy ezek közül a dinamikus szenzoros integrációs terápia.</p>
 
-    <img src="img/img01.jpg" style="width: 100%;" />
     <h3 id="dszit_2">Mit jelent a dinamikus szenzoros integrációs terápiás szemlélet?</h3>
-    
+    <img src="img/img01.jpg" style="width: 100%;" />
+
     <p>A szenzoros integráció folyamatában a különféle érzékelési csatornákon bejövő, környezetből
     származó információ megfelelő feldolgozása, és az arra való adaptív válasz kialakítása
     (mozgásos, beszéd, stb.) történik.</p>

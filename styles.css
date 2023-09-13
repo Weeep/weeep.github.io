@@ -90,6 +90,13 @@ h4 {
     color: white;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+}
+
 .menu ul {
     list-style: none;
 }
@@ -187,13 +194,6 @@ h4 {
 .page .content p {
 }
 
-.page .content img {
-    float: right;
-    width: 50px; /* Adjust the image width as needed */
-    height: auto; /* Maintain aspect ratio */
-    padding: .5rem;
-}
-
 .page-agenda {
     display: flex;
     flex-direction: column;
@@ -212,6 +212,19 @@ h4 {
     text-decoration: none;
     color: black;
     background-color: #dddddd;
+}
+
+.sub-agenda {
+    padding-left: 1rem;
+}
+
+.page-content-img {
+    width:200px;
+    float:right;
+}
+
+.page-content-img-phone {
+    display: none;
 }
 
 p {
@@ -369,6 +382,20 @@ td, th {
     }
 
     .contact-item span {
+        display: none;
+    }
+
+    footer {
+        font-size: .65rem;
+    }
+
+    .page-content-img-phone {
+        display: block;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .page-content-img {
         display: none;
     }
 }
