@@ -11,8 +11,8 @@ function changeContentToContact() {
     további egyeztetés céljából!</p>
     <p>E-mail: <a href="mailto:bontakozomuhely@gmail.com">bontakozomuhely@gmail.com</a></p>
     <h2>Helyszíneink</h2>
-    <p>A mozgás fókuszú ellátás a Balance Yoga Jógastúdióban történik (3300 Eger, Törvényház u.17.)</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.937421725834!2d20.3680861!3d47.8988965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408d9e221f1469%3A0x99ceebbe0b3a8d90!2zRWdlciwgVMO2cnbDqW55aMOheiB1LiAxNywgMzMwMA!5e0!3m2!1sen!2shu!4v1693935145129!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>A mozgás fókuszú ellátás a BodyMind Studióban történik (3300 Ráchegy Eger, Rácliget utca 1.)</p>
+    <!-- iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.937421725834!2d20.3680861!3d47.8988965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408d9e221f1469%3A0x99ceebbe0b3a8d90!2zRWdlciwgVMO2cnbDqW55aMOheiB1LiAxNywgMzMwMA!5e0!3m2!1sen!2shu!4v1693935145129!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe -->
     <p><br/><br/>A szülőkonzultációk és nem mozgás alapú képességfelmérések helyszíne pedig a Lollok Ház (3300 Eger, Sas utca 5-7.)</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.434256257855!2d20.38145211285984!3d47.88927966829329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408d7c4e9ea04b%3A0xc7bc4379eae9099e!2sEger%2C%20Sas%20u.%205%2C%203300!5e0!3m2!1sen!2shu!4v1693935373088!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p><br/><br/>A találkozáshoz előzetes egyeztetés szükséges mely során a kereteket megbeszéljük (idő, hely, ár).</p>
