@@ -1,313 +1,709 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Montserrat:400,700|Lora:400,700|Arima:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Montserrat:400,700|Lora:400,700|Arima:700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Bontakozó Tanácsadó Műhely</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header-container">
-        <header class="header">
-            <div id="icon" class="icon"></div>
-            <!-- h1 class="heading">Your Heading</h1 -->
-        </header>
-        <div class="contacts">
-            <div class="contact-item">
-                <a href="mailto:bontakozomuhely@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    <span>&nbsp;bontakozomuhely@gmail.com</span>
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="https://www.facebook.com/profile.php?id=61550286011921">
-                    <i class="fab fa-facebook"></i>
-                    <span>&nbsp;bontakozomuhely</span>
-                </a>
-            </div>
+      <header class="header">
+        <div id="icon" class="icon"></div>
+        <!-- h1 class="heading">Your Heading</h1 -->
+      </header>
+      <div class="contacts">
+        <div class="contact-item">
+          <a href="mailto:bontakozomuhely@gmail.com">
+            <i class="fas fa-envelope"></i>
+            <span>&nbsp;bontakozomuhely@gmail.com</span>
+          </a>
         </div>
-        
-        <nav class="menu">
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="menu-items">
-                <li class="active" id="intro">Bemutatkozás</a></li>
-                <li class="active" id="turntous" onclick="changeContentToTurnToUs()">Mivel fordulhatnak hozzánk?</li>
-                <li id="submenu" class="submenu">
-                    <a href="#" class="menu-link">Módszereink</a>
-                    <ul class="submenu-content" id="methods-submenu">
-                        <li class="active" id="dszit" onclick="changeContentToDSZIT()">DSZIT szemléletű foglalkozás</li>
-                        <li class="active" id="ability" onclick="changeContentToAbility()">Képességfelmérések</li>
-                        <li>Kisiskolás csoportok</li>
-                        <li>Kamasz csoportok</li>
-                        <li>Integrált szülő-csecsemő konzultáció</a></li>
-                    </ul>
-                </li>
-                <li class="active" id="goodtoknow" onclick="changeContentToGoodToKnow()">Tudnivalók</a></li>
-                <li class="active" id="contact" onclick="changeContentToContact()">Kapcsolat</a></li>
-                <!-- li><a href="https://blog.hu/" target="_blank">Blog</a></li -->
+        <div class="contact-item">
+          <a href="https://www.facebook.com/profile.php?id=61550286011921">
+            <i class="fab fa-facebook"></i>
+            <span>&nbsp;bontakozomuhely</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="menu-items">
+          <li class="active" id="intro">Bemutatkozás</li>
+          <li class="active" id="turntous" onclick="changeContentToTurnToUs()">
+            Mivel fordulhatnak hozzánk?
+          </li>
+          <li id="submenu" class="submenu">
+            <a href="#" class="menu-link">Módszereink</a>
+            <ul class="submenu-content" id="methods-submenu">
+              <li class="active" id="dszit" onclick="changeContentToDSZIT()">
+                DSZIT szemléletű foglalkozás
+              </li>
+              <li
+                class="active"
+                id="ability"
+                onclick="changeContentToAbility()"
+              >
+                Képességfelmérések
+              </li>
+              <li>Kisiskolás csoportok</li>
+              <li>Kamasz csoportok</li>
+              <li>Integrált szülő-csecsemő konzultáció</li>
             </ul>
-        </nav>
+          </li>
+          <li
+            class="active"
+            id="goodtoknow"
+            onclick="changeContentToGoodToKnow()"
+          >
+            Tudnivalók
+          </li>
+          <li class="active" id="contact" onclick="changeContentToContact()">
+            Kapcsolat
+          </li>
+          <!-- li><a href="https://blog.hu/" target="_blank">Blog</li -->
+        </ul>
+      </nav>
     </div>
 
     <div class="page-frame">
-        <main id="page" class="page">
-            
-            <h1>BONTAKOZÓ TANÁCSADÓ MŰHELY - EGER</h1>
-            
-            <div class="content">
-                <!--div class="p-w-img"-->
-                <img src="img/img06.jpg" class="page-content-img"/>
-                <p><b>Harmonikus személyiségfejlődés és idegrendszeri érés támogatására, mozgás fókuszú csoportokat
-                szervezünk Egerben, elsősorban önszabályozási-, érzelmi-, kapcsolati nehézséggel küzdő óvodás- és kisiskolás korú
-                gyerekek számára.</b>
-                </p>
-                <img src="img/img06.jpg" class="page-content-img-phone"/>
-                    
-                    <!--/div-->
-                        <p>A csoportok kettős vezetéssel, Dinamikus Szenzoros Integrációs Terápiás (DSZIT) szemléletben
-                        zajlanak.</p>
-                        <p>A továbbiakban szolgáltatásaink körét bővíteni fogjuk korosztály és módszerek tekintetében is.
-                        </p><p>Kövesse figyelemmel munkánkat!</p>
-                    
-                
-                <!-- /p><p>A részletekről tájékozódhat honlapunkról. -->
-            </div>
+      <main id="page" class="page">
+        <h1>BONTAKOZÓ TANÁCSADÓ MŰHELY - EGER</h1>
 
-            <h3>Szakemberek</h3>
-            <div class="introduction-container">
-                <a href="#eab-intro-content">
-                    <ul class="ul-introduction">
-                        <li class="li-introduction-img-eab" id="eab-intro-img"></li>
-                        <li class="li-introduction" id="eab-intro">
-                            Elek Ágnes Borbála
-                        </li>
-                    </ul>
-                </a>
+        <div class="content">
+          <!--div class="p-w-img"-->
+          <img src="img/img06.jpg" class="page-content-img" />
+          <p>
+            <b
+              >Óvodás- és kisiskoláskorú gyermekek számára kínálunk Dinamikus
+              Szenzoros Integrációs Terápiás szemléletű ellátást (DSZIT), egyéni
+              és kiscsoportos formában, pszichológus vezetésével.</b
+            >
+          </p>
+          <img src="img/img06.jpg" class="page-content-img-phone" />
 
-                <a href="#vha-intro-content">
-                    <ul class="ul-introduction">
-                        <li class="li-introduction-img-vha" id="vha-intro-img"></li>
-                        <li class="li-introduction" id="vha-intro">
-                            Váczy-Herman Ágnes
-                        </li>
-                    </ul>
-                </a>
-            </div>
-            
-            <div class="eab-intro-content" id="eab-intro-content">
-            <h3>Elek Ágnes Borbála, Tanácsadó szakpszichológus</h3>
-            <p>Szakmai érdeklődésem középpontjában a kezdetektől fogva a gyermekek állnak. Már gimnazista
-            koromban önkénteskedtem gyermekotthonban, táboroztattam gyerekeket. Ez a fajta elköteleződés,
-            bár kissé más formában, mindmáig az életem részét képezi.
-            Szakmai ismeretszerzésem folyamatáért rendkívül hálás vagyok volt gyakorlati-és
-            munkahelyeimnek, képzőimnek.</p>
-            <p>A gyerekekkel való munka és a saját önismeretei folyamataim is arra a felismerésre vezettek, hogy a
-            legörömtelibb kapcsolódások, amikben igazán otthon érzem magam szakemberként is, a mozgáson,
-            alkotó folyamatokon keresztül történnek.</p>
-            <p>Szerencsés vagyok, hogy egyetemista koromban megismerkedhettem a dinamikus szenzoros
-            integrációs (Ayres) terápiával, majd képződhettem is ezen a téren, és munkahelyeimen volt
-            lehetőségem tapasztalatokkal mélyíteni a megszerzett tudást.</p>
-            <p>Csodálom a gazdagságát, kreativitását, játékosságát ennek a módszernek, és csodálom mindeközben
-            a gyermekeket, akik elemi örömmel vesznek részt a folyamatban, és járják be a saját útjukat,
-            kommunikálnak a játék nyelvén, megjelenítik és feldolgozzák a konfliktusaikat, amíg mi
-            szakemberként ezt megtartó figyelemmel kísérjük, serkentjük. Lelkesítő számomra a folyamat,
-            amiben megismerhetem a velem együtt dolgozó szülőket, és gyermekeiket. Szeretem, ahogy kialakul
-            a bizalom és párbeszéd közöttünk, és így megszülethet a megértés a közös munka gyümölcseként.
-            Mindeközben rendkívül hasznosnak is tartom ezt a szemléletet, az idegrendszeri éretlenség
-            mibenlétének ismeretét. Értelmezhetővé teszi az eleinte sokszor ellentmondónak, érthetetlennek
-            látszó - szülőknek, gyermekeknek és pedagógusoknak - egyaránt nehézséget okozó tünetek
-            sokféleségét.</p>
-            <p>Nem lehet elégszer hangoztatni, hogy a felgyorsult világunk mozgásszegény, ingerekben azonban
-            kifejezetten gazdag voltát, ami a szociális kapcsolatok elszegényesedésével is együtt jár, az érlelődő
-            idegrendszer nehezen tudja követni. A tapasztalataim alapján ez jelentős mértékben hozzájárul a
-            manapság jelentkező elakadásokhoz.</p>
+          <!--/div-->
+          <p>
+            Célunk, hogy játék és mozgás közben támogassuk a gyerekek
+            idegrendszeri érését, önszabályozását és harmonikus fejlődését.
+          </p>
+          <!-- p>Kövesse figyelemmel munkánkat!</p -->
 
-            <p>A szülőkkel való munka folyamán az évek alatt erősödött a felismerésem, hogy a gyermekeknél
-            óvodás- iskolás korban problémát okozó tünetek, sok esetben már egész korai életszakaszban
-            megjelentek. A szülők többnyire érzékelték is azokat, azonban nem találtak megfelelő válaszokat a
-            felmerülő kérdéseikre. Ennek köszönhetően figyelmem egyre inkább a korai életszakasz fejlődése
-            felé irányult, tovább képeztem magam a csecsemőkori regulációs zavarok kezelése (integrált szülő-
-            csecsemő konzultáció), illetve a korai képességfelmérés (SEED Fejlődési Skála) irányában.
-            Ezeknek köszönhetően a látásmódom egyre komplexebbé vált, olyan értelmezési keretet,
-            munkamódot találtam, amit a mai kor nehézségei között hitelesnek, jól használhatónak érzek, és
-            aminek segítségével, a hozzám forduló kliensek számára egy elfogadó, inspiráló, a nehézségek
-            megélésével együtt is a megértést és változást támogató szemléletet biztosíthatok.
-            Az elmúlt tanévben alkalmunk nyílt együtt dolgozni Váczy-Herman Ágnes kolléganőmmel különféle
-            csoportokat vezetve. Az együttműködésünk minősége tovább növelte a csoportos munka iránti
-            elkötelezettségünket, inspiráló és eredményes volt a kettős vezetés.</p>
-            
-            <h3>SZAKMAI TAPASZTALATOK</h3>
-            <table>
+          <!-- /p><p>A részletekről tájékozódhat honlapunkról. -->
+        </div>
 
-            <tr><th style="width:20%">2023-</th><td><b>Világítani Fogok Egyesület</b>, Kerecsend</td></tr>
-            <tr><td>&nbsp;</td>
-            <td>A kerecsendi óvodában és iskolában, óvoda-, és iskolapszichológia feladatkör, Dszit szemléletű csoportok vezetése.</td></tr>
+        <h3>Szakemberek</h3>
+        <div class="introduction-container">
+          <a href="#eab-intro-content">
+            <ul class="ul-introduction">
+              <li class="li-introduction-img-eab" id="eab-intro-img"></li>
+              <li class="li-introduction" id="eab-intro">Elek Ágnes Borbála</li>
+            </ul>
+          </a>
 
-            <tr><th>2020-22</th><th>Magyar Máltai Szeretetszolgálat</th></tr>
-            <tr><td>&nbsp;</td>
-            <td>A Fókuszban a gyermek pályázati projektben koragyerekkori szakértőként
-            tevékenykedtem Heves megye néhány településén, ahol a 3 év alatti gyermekek
-            fejlődését követtem nyomon, támogattam.</td></tr>
-                
-            <tr><th>2020-23</th><th>Heves megyei Pedagógiai Szakszolgálat Füzesabonyi Tagintézménye</th></tr>
-            <tr><td>&nbsp;</td>
-            <td>Nevelési tanácsadás körébe tartozó tevékenységek, alkalomszerűen szakértői
-            tevékenység.</td></tr>
+          <a href="#vha-intro-content">
+            <ul class="ul-introduction">
+              <li class="li-introduction-img-vha" id="vha-intro-img"></li>
+              <li class="li-introduction" id="vha-intro">Váczy-Herman Ágnes</li>
+            </ul>
+          </a>
+        </div>
 
-            <tr><th>2015-től</th><th>Világítani Fogok Egyesület, önkéntes</th></tr>
-            <tr><td>&nbsp;</td>
-            <td>Hátrányos helyzetű gyerekek táboroztatása, családokkal kapcsolattartás.</td></tr>
+        <div class="eab-intro-content" id="eab-intro-content">
+          <h3>
+            Elek Ágnes Borbála, Tanácsadó szakpszichológus, integrált szülő-
+            csecsemő/ kisgyermek konzulens
+          </h3>
+          <p>
+            Szakmai érdeklődésem középpontjában a kezdetektől fogva a gyermekek
+            állnak. Már gimnazista koromban önkénteskedtem gyermekotthonban,
+            táboroztattam gyerekeket. Ez a fajta elköteleződés, bár kissé más
+            formában, mindmáig az életem részét képezi. Szakmai ismeretszerzésem
+            folyamatáért rendkívül hálás vagyok volt gyakorlati-és
+            munkahelyeimnek, képzőimnek.
+          </p>
+          <p>
+            A gyerekekkel való munka és a saját önismeretei folyamataim is arra
+            a felismerésre vezettek, hogy a legörömtelibb kapcsolódások, amikben
+            igazán otthon érzem magam szakemberként is, a mozgáson, alkotó
+            folyamatokon keresztül történnek.
+          </p>
+          <p>
+            Szerencsés vagyok, hogy egyetemista koromban megismerkedhettem a
+            dinamikus szenzoros integrációs (Ayres) terápiával, majd
+            képződhettem is ezen a téren, és munkahelyeimen volt lehetőségem
+            tapasztalatokkal mélyíteni a megszerzett tudást.
+          </p>
+          <p>
+            Csodálom a gazdagságát, kreativitását, játékosságát ennek a
+            módszernek, és csodálom mindeközben a gyermekeket, akik elemi
+            örömmel vesznek részt a folyamatban, és járják be a saját útjukat,
+            kommunikálnak a játék nyelvén, megjelenítik és feldolgozzák a
+            konfliktusaikat, amíg mi szakemberként ezt megtartó figyelemmel
+            kísérjük, serkentjük. Lelkesítő számomra a folyamat, amiben
+            megismerhetem a velem együtt dolgozó szülőket, és gyermekeiket.
+            Szeretem, ahogy kialakul a bizalom és párbeszéd közöttünk, és így
+            megszülethet a megértés a közös munka gyümölcseként. Mindeközben
+            rendkívül hasznosnak is tartom ezt a szemléletet, az idegrendszeri
+            éretlenség mibenlétének ismeretét. Értelmezhetővé teszi az eleinte
+            sokszor ellentmondónak, érthetetlennek látszó - szülőknek,
+            gyermekeknek és pedagógusoknak - egyaránt nehézséget okozó tünetek
+            sokféleségét.
+          </p>
+          <p>
+            Nem lehet elégszer hangoztatni, hogy a felgyorsult világunk
+            mozgásszegény, ingerekben azonban kifejezetten gazdag voltát, ami a
+            szociális kapcsolatok elszegényesedésével is együtt jár, az érlelődő
+            idegrendszer nehezen tudja követni. A tapasztalataim alapján ez
+            jelentős mértékben hozzájárul a manapság jelentkező elakadásokhoz.
+          </p>
 
-            <tr><th>2012-20</th><th>Fővárosi Pedagógiai Szakszolgálat IV. Ker. Tagintézménye, pszichológus</th></tr>
-            <tr><td>&nbsp;</td>
-            <td>Járási szintű szakértői vizsgálatok, nevelési tanácsadás körében végzett tevékenységek
-            (idegrendszeri éretlenség vizsgálata és kezelése, szülő-csecsemő konzultáció),
-            iskolapszichológusi feladatkörök.</td></tr>
+          <p>
+            A szülőkkel való munka folyamán az évek alatt erősödött a
+            felismerésem, hogy a gyermekeknél óvodás- iskolás korban problémát
+            okozó tünetek, sok esetben már egész korai életszakaszban
+            megjelentek. A szülők többnyire érzékelték is azokat, azonban nem
+            találtak megfelelő válaszokat a felmerülő kérdéseikre. Ennek
+            köszönhetően figyelmem egyre inkább a korai életszakasz fejlődése
+            felé irányult, tovább képeztem magam a csecsemőkori regulációs
+            zavarok kezelése (integrált szülő- csecsemő konzultáció), illetve a
+            korai képességfelmérés (SEED Fejlődési Skála) irányában. Ezeknek
+            köszönhetően a látásmódom egyre komplexebbé vált, olyan értelmezési
+            keretet, munkamódot találtam, amit a mai kor nehézségei között
+            hitelesnek, jól használhatónak érzek, és aminek segítségével, a
+            hozzám forduló kliensek számára egy elfogadó, inspiráló, a
+            nehézségek megélésével együtt is a megértést és változást támogató
+            szemléletet biztosíthatok.
+          </p>
 
-            <tr><th>2013-15</th><th>Palánta Alapítvány Óvoda, óvodapszichológus</th>
-            <tr><td>&nbsp;</td>
-            <td>Szülőcsoportok vezetése, csoportos megfigyelések, szülőkonzultáció.</td></tr>
-
-
-            <tr><th>2010</th><th>Óbudai Nevelési Tanácsadó, III. ker., 60 órás szakmai gyakorlat</th></tr>
-            <tr><td>&nbsp;</td>
-            <td>Diagnosztikai munka, Dszit csoportok támogatása.</td></tr>
-            
-            <tr><th>2010</th><th>MRE Bethesda Gyermekkórház, családterápiás gyakorlat
-            <tr><td>&nbsp;</td>
-            <td>Családterápiás ülések részvétel, jegyzőkönyvezés.</td></tr>
-            
-            </table>
-            
-            <h3>TANULMÁNYOK, KÉPZÉSEK</h3>
-            <table>
+          <h3>SZAKMAI TAPASZTALATOK</h3>
+          <table>
             <tr>
-            <th style="width:20%">2017</th><th>SEED Fejlődési Skála, 30 órás tanfolyam, Korai Fejlesztő Központ</th>
-            </tr>
-            
-            <tr>
-            <th>2014-2016</th><th>Integrált szülő- csecsemő konzultáció, SOTE</th>
-            </tr>
-            <tr>
-            <td>&nbsp;</td>
-            <td>Csecsemő- és kisgyermekkori regulációs zavarok kezelésére használt prevenciós,
-            intervenciós módszer.</td>
+              <th style="width: 20%">2023-</th>
+              <td><i>Világítani Fogok Egyesület, Kerecsend</i></td>
             </tr>
 
-            <tr><th>2014-2018</th><th>Tanácsadó szakpszichológus képzés, ELTE</th></tr>
-            <td>&nbsp;</td>
-            <td>Családi és párkapcsolati tanácsadás specializáció</td></tr>
-            <tr><th>2014</th><th>Szenzoros integrációs terápiák: saját élmény csoport</th></tr>
-            <tr><th>2014</th><th>Szenzoros integrációs terápiák elmélete</th></tr>
-            <tr><th>2008-2009</th><th>120 óra pszichodráma sajátélmény</th></tr>
-            <tr><th>2009</th><th>Motivációs tréning, PPKE BTk</th></tr>
-            <tr><th>2005-2012</th><th>Pszichológia, Pedagógia, Pázmány Péter Katolikus Egyetem BTK (Klinikai
-            pszichológia-, Család- és valláspszichológia szakirány)</th></tr>
-            </table>
-            </div>
-            
-            <div class="vha-intro-content" id="vha-intro-content">
-            <h3>Váczy-Herman Ágnes, pedagógiai szakpszichológus</h3>
-            <p>2011 óta dolgozom
-            pedagógiai szakszolgálatban. Munkám elsősorban pszichológiai tanácsadó, támogató és
-            fejlesztő tevékenységen alapul.
-            Tevékenységem része az óvodával, iskolával összefüggő tanulási, magatartási, beilleszkedési
-            és egyéb pszichés problémák esetén a szülőkkel, pedagógusokkal közös konzultációs
-            folyamatban megoldást keresni, továbbá a gyermekekkel végzett egyéni és csoportos fejlesztő
-            foglalkozások keretében történő segítségnyújtás. A csoportos pszichológiai ellátás óvodáskorú
-            gyerekek esetében elsősorban mozgásalapú, érést, fejlődést, lelki összerendeződést segítő,
-            iskoláskorú gyerekek esetében személyiségfejlesztő és társas hatékonyságot fejlesztő
-            foglalkozást jelent.</p>
-            <p>A szülőkkel, pedagógusokkal közös konzultációs folyamatban azt tapasztaltam, hogy a
-            szülők, pedagógusok sokszor eszköztelennek és tehetetlennek érzik magukat a modernkori
-            gyermekek vonatkozásában felmerülő problémák esetén. Emiatt a konfliktusok megoldásában
-            gyakran aktivizálódnak rossz kommunikációs beidegződések, ösztönös minták, tévhitekre
-            épülő megoldási utak. Ezeknek hatására azonban a problémák nem oldódnak meg, hanem
-            ellenkezőleg, egy negatív spirál indul be. A nem megfelelő problémakezelés eredménye egyre
-            több konfliktus, egyre mélyülő ellentétek, egyre kezelhetetlenebb gyermek.
-            </p><p>A negatív spirál ugyanakkor pozitív irányban is működik. Tudatosságunkon és a belefektetett
-            munkán múlik, hogy az önmagát erősítő folyamat milyen irányt vesz. Szerencsés vagyok
-            abban, hogy számos esetben kísérhettem a folyamatot, aminek során a felismerések, belátás,
-            elfogadás talaján a sodródás helyét a tudatos irányítás vette át.
-            </p><p>A gyerekekkel végzett pszichológiai fejlesztő tevékenységeim közül különösen kedves
-            számomra az óvodáskorú gyermekekkel való mozgásalapú foglalkozás. Lenyűgöz, ahogy
-            ezek a gyerekek felszabadulnak egy lehetőségeket, kihívásokat kecsegtető térben, közegben,
-            ahogy örömmel, és fáradtságot nem kímélve bontakoztatják ki képességeiket, és mutatják meg
-            személyiségük mintáit. Megtapasztalhattam, hogy a gyerekek miközben felhőtlenül élik
-            gyermeki mivoltukat, belső hajtóerejük ösztönösen azok felé a kihívások felé tereli őket, ami
-            egyúttal fejlődésüket is szolgálja
-            </p><p>Pszichológusi minőségem mellet fontosnak tartom megemlíteni, hogy két gyermek
-            édesanyja is vagyok, akiket férjemmel együtt nevelünk. A magánéleti folyamat és tapasztalás,
-            amelynek során családdá váltunk, hozzájárult szakmabeli szemléletem formálódásához is.
-            Megtapasztaltam, hogy hiába az elméleti tudás, a gyermekes lét számtalan kihívást tartogat,
-            ennek során elkerülhetetlenül szembesülünk saját korlátainkkal is. Ez nehéz lelki út, úgy
-            vélem, minden szülőnek van olyan időszaka, amikor elkel számára a támogatás, az
-            együttérzés.
-            </p><p>Hiszek a kapcsolat, kapcsolódás erejében, legyen szó felnőttek közötti, felnőtt-gyerek,
-            vagy gyerekek közötti kapcsolatról. Azt gondolom, hogy bármikor képesek vagyunk fejlődni
-            abban, hogy egészségesen, őszintén tudjunk kapcsolódni egymáshoz, és önmagunkhoz.
-            Pszichológiai munkám során legnagyobb örömöm, amikor megszületik a közös munka
-            eredménye, a közös megértése a reakciók mögött húzódó okoknak. A megértésből fakadó
-            figyelem, és összehangolódás a kapcsolat megerősödéséhez vezet, mely aztán hozzájárul a
-            személyes növekedéshez, és bázisa, támasza, erőforrása lesz gyermeknek, felnőttnek
-            egyaránt.
-            </p><p>Az elmúlt tanévben Elek Ágnes tanácsadó szakpszichológus kollégámmal vezettünk
-            közösen dinamikus szenzoros integrációs szemléletű óvodás csoportokat, illetve kamaszok és
-            kiskamaszok számára szociális készségfejlesztő csoportokat. A közös működés
-            gyümölcsözőnek bizonyult, élünk a kettős vezetés nyújtotta előnyökkel, ami által magasabb
-            szakmai színvonalat is képviselhetünk. Mivel tapasztaljuk, hogy egyre növekszik azon
-            gyerekek száma, akiknél éretlen, vagy nem megfelelően, eltérően működő idegrendszeri
-            működés jellemző, fókuszunkban elsősorban dinamikus szenzoros integrációs foglalkozások
-            lesznek. A DSZIT szemléletű ellátásnak köszönhető magasabb idegrendszeri integrációs szint
-            elérése mellet, a szülőkonzultáció folyamatában a támogatáson, megértésen keresztül
-            lehetőség nyílik a szülők gyerekeikkel való kapcsolódásának elmélyítésére is.<p>
-            
-            <h3>SZAKMAI TAPASZTALAT</h3>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>
+                    Óvoda- és iskolapszichológusi feladatok a kerecsendi
+                    óvodában és iskolában
+                  </li>
+                  <li>DSZIT szemléletű csoportok vezetése</li>
+                </ul>
+              </td>
+            </tr>
 
-            <table>
+            <tr>
+              <th>2020-22</th>
+              <td><i>Magyar Máltai Szeretetszolgálat</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>
+                    „Fókuszban a gyermek” pályázati projektben koragyerekkori
+                    szakértőként tevékenykedtem Heves megye több településén
+                  </li>
+                  <li>
+                    3 év alatti gyermekek fejlődésének nyomon követése,
+                    támogatása
+                  </li>
+                </ul>
+              </td>
+            </tr>
 
-            <tr><th style="width:20%">2023-</th><td><b>Bontakozó Tanácsadó Műhely</b>, Eger</td></tr>
-            <tr><td>&nbsp;</td>
-            <td>Pszichológus</td></tr>
+            <tr>
+              <th>2020-23</th>
+              <td>
+                <i>
+                  Heves megyei Pedagógiai Szakszolgálat Füzesabonyi
+                  Tagintézménye
+                </i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Nevelési tanácsadás körébe tartozó tevékenységek</li>
+                  <li>Alkalomszerű szakértői tevékenység</li>
+                </ul>
+              </td>
+            </tr>
 
-            <tr><th>2023-</th><td><b>Világítani Fogok Egyesület</b>, Kerecsend</td></tr>
-            <tr><td>&nbsp;</td>
-            <td>Óvoda- és iskolapszichológus</td></tr>
+            <tr>
+              <th>2015-től</th>
+              <td><i>Világítani Fogok Egyesület, önkéntes</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Hátrányos helyzetű gyerekek táboroztatása</li>
+                  <li>Kapcsolattartás családokkal</li>
+                </ul>
+              </td>
+            </tr>
 
-            <tr><th>2011-2023</th><th>Heves megyei Pedagógiai Szakszolgálat Füzesabonyi Tagintézménye</th></tr>
-            <tr><td>&nbsp;</td>
-            <td>Pszichológus- nevelési tanácsadási tevékenység, iskolapszichológiai,
-            óvodapszichológiai tevékenység, szakértői tevékenység, iskola- és
-            óvodapszichológus feladatok koordinátora munkakör.</td></tr>
+            <tr>
+              <th>2012-20</th>
+              <td>
+                <i>
+                  Fővárosi Pedagógiai Szakszolgálat IV. Ker. Tagintézménye,
+                  pszichológus
+                </i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Járási szintű szakértői vizsgálatok</li>
+                  <li>
+                    Nevelési tanácsadás (idegrendszeri éretlenség vizsgálata és
+                    kezelése, szülő-csecsemő konzultáció)
+                  </li>
+                  <li>Iskolapszichológusi feladatkörök</li>
+                </ul>
+              </td>
+            </tr>
 
-            <tr><th>2009-2010</th><td><b>Trenkwalder</b>, Debrecen</td></tr>
-            <tr><td>&nbsp;</td>
-            <td>Pszichológus- munkaerő közvetítés</td></tr>
+            <tr>
+              <th>2013-15</th>
+              <td><i>Palánta Alapítvány Óvoda, óvodapszichológus</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Szülőcsoportok vezetése</li>
+                  <li>Csoportos megfigyelések, szülőkonzultáció</li>
+                </ul>
+              </td>
+            </tr>
 
-            </table>
+            <tr>
+              <th>2010</th>
+              <td>
+                <i>
+                  Óbudai Nevelési Tanácsadó, III. kerület (60 órás szakmai
+                  gyakorlat)
+                </i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Diagnosztikai munka</li>
+                  <li>DSZIT csoportok támogatása</li>
+                </ul>
+              </td>
+            </tr>
 
-            <h3>TANULMÁNYOK, KÉPZÉSEK</h3>
-            <table>
-            <tr><th style="width:20%">2023-</th><td><b>DSZIT tanfolyam</b>, Magyar Dinamikus Szenzoros Integrációs Terápiás Egyesület, Budapest</td></tr>
-            <tr><th>2019</th><td><b>Pedagógiai Szakpszichológus (4 félév)</b>, Eötvös Lóránd Tudományegyetem Pedagógiai és Pszichológiai Kar</td></tr>
-            <tr><th>2010</th><td><b>Okleveles Pszichológus (10 félév)</b>, Debreceni Egyetem Bölcsésztudományi Kar</td></tr>
-            <tr><th>2010</th><td><b>Pszichológus szakfordító (angol nyelvű) (4 félév)</b>, Debreceni Egyetem Bölcsésztudományi Kar</td></tr>
-            </table>
-            </div>
+            <tr>
+              <th>2010</th>
+              <td>
+                <i> MRE Bethesda Gyermekkórház, családterápiás gyakorlat</i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Részvétel családterápiás üléseken</li>
+                  <li>Jegyzőkönyvezés</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
 
-            <p>Keressen bátran bennünket, amennyiben úgy gondolja, hogy közösen gondolkodna, dolgozna velünk
-                gyermeke harmonikusabb működése érdekében!</p>
-        </main>
+          <h3>TANULMÁNYOK, KÉPZÉSEK</h3>
+          <table>
+            <tr>
+              <th style="width: 20%">2025</th>
+              <td>
+                <i
+                  >Autista gyerekek (1,5-6 év) hatékony korai fejlesztése játék
+                  tevékenységen keresztül, szociális-kommunikációs készségekkel
+                  a fókuszban</i
+                >
+                - Vadaskert Alapítvány
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2025</th>
+              <td>
+                <i>A családi határok vizeletben oldódnak?</i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>
+                    Az éjszakai ágybavizelés komplex terápiája, családterápiás
+                    megközelítéssel - MCSE Workshop
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2025</th>
+              <td><i>EMOTH - Otthon Érzelmi Alaprajza Képzés</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2023</th>
+              <td>
+                <i
+                  >Kora gyermekkori evészavar a gyakorlatban
+                  bio-pszicho-szociális megközelítéssel</i
+                >
+                - Heim Pál Gyermekgyógyászati Intézet
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2017</th>
+              <td>
+                <i>SEED Fejlődési Skála, 30 órás tanfolyam</i> - Korai Fejlesztő
+                Központ
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2014-2016</th>
+              <td><i>Integrált szülő- csecsemő konzultáció</i> - SOTE</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>
+                    Csecsemő- és kisgyermekkori regulációs zavarok kezelésére
+                    használt prevenciós, intervenciós módszer.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2014-2018</th>
+              <td><i>Tanácsadó szakpszichológus képzés</i> - ELTE</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Családi és párkapcsolati tanácsadás specializáció</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2014</th>
+              <td>
+                <i>Szenzoros integrációs terápiák: saját élmény csoport</i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2014</th>
+              <td><i>Szenzoros integrációs terápiák elmélete</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2008-2009</th>
+              <td><i>Pszichodráma sajátélmény, 120 óra</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2005-2012</th>
+              <td>
+                <i>Pszichológia, Pedagógia szak</i> - Pázmány Péter Katolikus
+                Egyetem BTK
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>
+                    (Klinikai pszichológia-, család- és valláspszichológia
+                    szakirány)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="vha-intro-content" id="vha-intro-content">
+          <h3>
+            Váczy-Herman Ágnes, pedagógiai szakpszichológus, DSZIT-terapeuta
+          </h3>
+          <p>
+            Az elmúlt években egyre gyakrabban tapasztalom, hogy a szülők már
+            egészen korán tudatosan keresnek támogatást. Vannak, akik szeretnék
+            jobban megérteni gyermekük reakcióit, mások bizonytalanságot élnek
+            meg, vagy úgy érzik, gyermekük fejlődése eltér a megszokottól.
+            Sokszor a közösségbe kerüléskor a pedagógusok szakmai jelzései
+            hoznak új szempontokat, amelyek segítenek a szülőknek abban, hogy
+            érdemes szakemberhez fordulni. Ami minden történetben közös: a
+            szülők a legjobbat szeretnék gyermeküknek.
+          </p>
+          <p>
+            Meggyőződésem, hogy minden gyermek magában hordozza a kibontakozás
+            és az érés lehetőségét. Nem „megjavítani” kell őket, hanem olyan
+            biztonságos közeget teremteni számukra, ahol saját ritmusukban,
+            belső erejükre támaszkodva fejlődhetnek. Lenyűgöző számomra, ahogy a
+            gyerekek a játék örömében ösztönösen keresik a kihívásokat, amelyek
+            előreviszik őket. A mi feladatunk, hogy ezt a belső törekvést
+            meglássuk és támogassuk.
+          </p>
+          <p>
+            Ebben nyújt segítséget a Dinamikus Szenzoros Integrációs Terápia
+            (DSZIT). A módszer a mozgás és a játék lehetőségeit használja arra,
+            hogy támogassa az idegrendszer érését és a gyermek természetes
+            kibontakozását. Pszichológusként ugyanakkor nemcsak a mozgásra és az
+            idegrendszeri működésre figyelek, hanem a gyermek reakcióinak
+            mögöttes lelki folyamataira is. A DSZIT így komplex módon, egyszerre
+            segíti a testi, idegrendszeri és lelki fejlődést, mindig a gyermek
+            egyediségének tiszteletben tartásával.
+          </p>
+          <p>
+            Fontosnak tartom, hogy a szülők is támpontokat kapjanak. Amikor
+            megértés születik a gyermek viselkedéséről, a feszültség oldódik, és
+            a nehézségek helyét gyakran harmonikusabb együttműködés veszi át. Ez
+            a közös rálátás és összehangolódás nemcsak a mindennapokat könnyíti
+            meg, hanem tartós erőforrássá válik szülő és gyermek számára
+            egyaránt, és olyan pillanatokat teremt, amelyek valódi növekedést
+            hoznak.
+          </p>
+          <p>
+            Két gyermek édesanyjaként magam is tudom, mennyi bizonytalanságot és
+            kihívást rejt a szülői lét. Saját családi tapasztalataim is
+            formálták szakmai szemléletemet, és még inkább megerősítettek abban,
+            mennyire fontos a támogató jelenlét.
+          </p>
+
+          <p></p>
+
+          <h3>SZAKMAI TAPASZTALAT</h3>
+
+          <table>
+            <tr>
+              <th style="width: 20%">2023-napjainkig</th>
+              <td><i>Bontakozó Tanácsadó Műhely, Eger</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Pszichológus, DSZIT-terapeuta</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2023-2024</th>
+              <td><i>Világítani Fogok Egyesület, Kerecsend</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Óvoda- és iskolapszichológus</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2011-2023</th>
+              <td>
+                <i>
+                  Heves Megyei Pedagógiai Szakszolgálat, Füzesabonyi
+                  Tagintézmény
+                </i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Pszichológus - nevelési tanácsadás</li>
+                  <li>Óvoda- és iskolapszichológus</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2009-2010</th>
+              <td><i>Trenkwalder, Debrecen</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>Pszichológus- munkaerő közvetítés</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+
+          <h3>TANULMÁNYOK, KÉPZÉSEK</h3>
+          <table>
+            <tr>
+              <th style="width: 20%">2025</th>
+              <td>
+                <i
+                  >Autista gyerekek (1,5-6 év) hatékony korai fejlesztése játék
+                  tevékenységen keresztül, szociális-kommunikációs készségekkel
+                  a fókuszban</i
+                >
+                - Vadaskert Alapítvány
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2025</th>
+              <td>
+                <i>Kommunikáció indul! - AAK a gyakorlatban</i>
+                - Vadaskert Alapítvány
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2025</th>
+              <td>
+                <i
+                  >Dinamikus Szenzoros Integrációs Terapeuta képzés (179 óra)</i
+                >
+                - Magyar Dinamikus Szenzoros Integrációs Terápiás Egyesület,
+                Budapest
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2025</th>
+              <td>
+                <i>A családi határok vizeletben oldódnak?</i>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <ul class="ul-custom-list">
+                  <li>
+                    Az éjszakai ágybavizelés komplex terápiája, családterápiás
+                    megközelítéssel - MCSE Workshop
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>2025</th>
+              <td><i>EMOTH - Otthon Érzelmi Alaprajza Képzés</i></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2019</th>
+              <td>
+                <i>Pedagógiai Szakpszichológus (4 félév)</i> Eötvös Loránd
+                Tudományegyetem Pedagógiai, PPK
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2010</th>
+              <td>
+                <i>Okleveles Pszichológus (10 félév)</i> Debreceni Egyetem,
+                Bölcsésztudományi Kar
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <th>2010</th>
+              <td>
+                <i>Pszichológus szakfordító (angol nyelvű, 4 félév)</i>
+                Debreceni Egyetem, Bölcsésztudományi Kar
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+
+        <p>
+          Keressen bátran bennünket, amennyiben úgy gondolja, hogy közösen
+          gondolkodna, dolgozna velünk gyermeke harmonikusabb működése
+          érdekében!
+        </p>
+      </main>
     </div>
-    <footer>
-        2023 Bontakozó Tanácsadó Műhely © Minden jog fenntartva
-    </footer>
+    <footer>2023 Bontakozó Tanácsadó Műhely © Minden jog fenntartva</footer>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
