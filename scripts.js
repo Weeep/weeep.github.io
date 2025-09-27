@@ -13,8 +13,6 @@ function changeContentToContact() {
     <h2>Helyszíneink</h2>
     <p>A mozgás fókuszú ellátás a BodyMind studióban történik (3300 Eger, Rácliget utca 1.)</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.966161979683!2d20.359498314637044!3d47.91769219287912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408db703837f61%3A0x97254edffeaea4b6!2zUsOhY2xpZ2V0IExha8OzcGFyaw!5e0!3m2!1sen!2shu!4v1705662831589!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p><br/><br/>A szülőkonzultációk és nem mozgás alapú képességfelmérések helyszíne pedig a Lollok Ház (3300 Eger, Sas utca 5-7.)</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.434256257855!2d20.38145211285984!3d47.88927966829329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47408d7c4e9ea04b%3A0xc7bc4379eae9099e!2sEger%2C%20Sas%20u.%205%2C%203300!5e0!3m2!1sen!2shu!4v1693935373088!5m2!1sen!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p><br/><br/>A találkozáshoz előzetes egyeztetés szükséges mely során a kereteket megbeszéljük (idő, hely, ár).</p>
     <img src="img/img02.jpg" style="width: 100%;">
     </div>
