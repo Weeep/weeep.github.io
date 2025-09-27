@@ -66,45 +66,36 @@ function changeContentToContact() {
     osztjuk meg a tapasztalatainkat egymással. Természetesen a szülők igénye alapján, illetve
     amennyiben a szakmai szempontok indokolttá teszik, lehetőség van további konzultációs időpontot
     egyeztetni.</p>
-    <h3 id="t_4">Áraink</h3>
+    <h3 id="t_4">Árlista</h3>
+    <p>Az alábbiakban összefoglaltuk a szolgáltatásaink típusait és díjait.</p>
     <table>
     <tr>
-    <th>Óratípusa</th><th>Hossza</th><th>Árak/alkalom</th>
+    <th>Szolgáltatás típusa</th><th>Időtartam</th><th>Díj</th>
     </tr>
     <tr>
-    <td>Anamnézis, kezdő szülőkonzultáció</td><td>90 perc</td><td>20000 Ft</td>
+    <td>Anamnézis, kezdő szülőkonzultáció</td><td>90 perc</td><td>22000 Ft</td>
     </tr>
     <tr>
-    <td>Csoportos óra (4-5 fő)</td><td>45 perc</td><td>7000 Ft/fő</td>
+    <td>Csoportos DSZIT-foglalkozás (4-5 fő, kettős vezetéssel)</td><td>50 perc</td><td>8000 Ft/fő</td>
     </tr>
     <tr>
-    <td>Egyéni óra</td><td>45 perc</td><td>13000 Ft</td>
+    <td>Csoportos DSZIT-foglalkozás (2-3 fő, egy szakemberrel)</td><td>50 perc</td><td>8000 Ft/fő</td>
     </tr>
     <tr>
-    <td>Szülőkonzultáció/tanácsadás</td><td>60 perc</td><td>15000 Ft</td>
+    <td>Egyéni DSZIT-foglalkozás</td><td>50 perc</td><td>15000 Ft</td>
     </tr>
     <tr>
-    <td>Szülőkonzultáció/tanácsadás</td><td>90 perc</td><td>20000 Ft</td>
+    <td>Szülőkonzultáció/tanácsadás</td><td>60 perc</td><td>18000 Ft</td>
     </tr>
     <tr>
-    <td>SEED Fejlődési Skála, konzultáció</td><td>120 perc</td><td>25000 Ft</td>
+    <td>Szülőkonzultáció/tanácsadás</td><td>90 perc</td><td>22000 Ft</td>
     </tr>
     <tr>
-    <td>Iskolaérettségi vizsgálat</td><td>120 perc</td><td>20000 Ft</td>
-    </tr>
-    <tr>
-    <td>Mozgásfejlettség szűrővizsgálat, konzultáció</td><td>90 perc</td><td>20000 Ft</td>
-    </tr>
-    <tr>
-    <td>Évközi szakvélemény a szülő kérésére</td><td>&nbsp;</td><td>6000 Ft</td>
+    <td>Évközi szakvélemény a szülő kérésére</td><td>&nbsp;</td><td>8000 Ft</td>
     </tr>
     </table>
-    <p>Írásos véleményt csak a képességmérések (SEED Fejlődési Skála, Iskolaérettségi vizsgálat,
-    Mozgásfejlettség szűrővizsgálat) után kapnak a szülők, a gyermekkel történő egyszeri találkozást
-    követően.</p>
-    <p>Ezen kívül a szülő kérhet a gyermek fejlődéséről, állapotáról szakvéleményt, ezt azonban csak a
-    gyermekkel történő több alkalmas találkozást követően tudjuk szakmai szempontból felelősen
-    kiállítani (a gyermek oldódásától, működésétől függően 2-4 alkalom).</p>
+    <p>Írásos szakvéleményt csak több találkozást követően tudunk felelősen kiállítani
+     (a gyermek oldódásától, működésétől függően általában 2-4 alkalom után).</p>
     </div>
     `
  }
