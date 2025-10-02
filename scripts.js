@@ -53,19 +53,37 @@ function changeContentToContact() {
     
     <h3 id="t_3">Mi a szülő szerepe a közös munkafolyamatban?</h3>
     <img src="img/img03.jpg" style="width: 100%;">
-    <p>Az eredményes közös munkában a szülő elkötelezettsége fontos tényező. A családokkal a
-    rendszerszemlélet jegyében dolgozunk. A gyermek tünete nem független a környezetétől. A
-    viselkedési minták megértéséhez, az egészséges és hatékonyabb működésmód megtalálásához meg
-    kell ismernünk a szülő tapasztalatait, elképzeléseit, érzéseit, a gyermek és család fejlődéstörténetét.
-    Azon dolgozunk, hogy az elfogadó légkörben a szülők a bizalmukba tudjanak avatni minket, mert a
-    szakmai tudásunk nem hasznosítható, nem általános érvényű önmagában, nem tudunk sajnos kész
-    receptet nyújtani. Azonban a kölcsönösen aktív részvételünk sikeressé teheti az együttműködést.
-    Hisszük, hogy több szem többet lát, örömünkre szolgál, ha mindkét szülő be tud kapcsolódni a közös
-    munkába.</p>
-    <p>A csoportjainkba járó gyermekek szüleivel minimum félévente egy alkalommal szülőkonzultáció keretében
-    osztjuk meg a tapasztalatainkat egymással. Természetesen a szülők igénye alapján, illetve
-    amennyiben a szakmai szempontok indokolttá teszik, lehetőség van további konzultációs időpontot
-    egyeztetni.</p>
+    <p>A Dinamikus Szenzoros Integrációs Terápia során a gyermek játékban és mozgásban fejezi ki
+    önmagát. Amit a terápiás térben átél, az szorosan összefügg a mindennapokkal, a családi
+    helyzetekkel és a közösségi tapasztalatokkal. Éppen ezért a szülők bevonódása nélkül a
+    folyamat nem lehet teljes.</p>
+    <p>Az első szülőkonzultáció kiemelt jelentőségű: ilyenkor nem csupán a gyermek anamnesztikus
+    adatai és fejlődéstörténete kerülnek fókuszba, hanem a szülők tapasztalatai, érzései,
+    elképzelései is. Amikor a szülők nyitottan és reflektíven tekintenek saját működésmódjukra,
+    az sokkal árnyaltabb és gazdagabb képet ad a gyermek helyzetéről, és megalapozza a
+    személyre szabott, hatékony közös munkát.</p>
+    <p>A terápiás folyamat elindulását követően a szülőkonzultációk szervesen kapcsolódnak a
+    gyermek terápiájához. Ezek a találkozások segítik a terápiás élmények értelmezését, és a
+    szülők által hozott mindennapi helyzetek példáin keresztül árnyaltabbá válik a gyermek
+    viselkedésének, motivációinak, érzékenységeinek, valamint szenzoros és motoros mintáinak
+    megértése. A szakmai szempontok és a szülői tapasztalatok találkozása így közösen teszi
+    érthetőbbé, mi állhat a gyermek reakciói mögött.</p>
+    <p>Előfordul, hogy a szülők által megosztott történetekben saját viszonyulásaik, hozott mintáik is
+    felszínre kerülnek. Ez azonban nem a konzultáció középpontja, hanem egy lehetséges
+    kísérőfolyamat: a felismerések és átkeretezések új megértést adhatnak, ha a helyzet
+    megkívánja. A fő cél mindig az, hogy a szülők gazdagabb képet kapjanak gyermekük
+    működéséről, és közösen találjunk kapaszkodókat a hétköznapokhoz.</p>
+    <p>Tapasztalataink szerint a rendszeres konzultációk - lehetőleg két-három havonta - biztosítják,
+    hogy a folyamat követhető, érthető és előremutató legyen mind a szülők, mind a terapeuta
+    számára. Hiszünk abban, hogy a közös gondolkodás adja a munka erejét: amikor a szülői
+    tapasztalatok és a szakmai szempontok találkoznak, olyan új megértések születnek, amelyek
+    egyik fél számára sem lennének önmagukban hozzáférhetők.</p>
+    <p>Ha van rá lehetőség, fontos, hogy mindkét szülő be tudjon kapcsolódni a konzultációkba: így
+    a családi rendszer teljesebben jelenik meg, és a közös megértés, összehangolódás sokkal
+    erősebb alapot ad a gyermek támogatásához. A szülők így nem maradnak magukra a
+    kérdéseikkel, hanem aktív részeseivé válnak annak a közös munkának, amelyben a terápia
+    valódi változást hozhat a gyermek és az egész család számára.</p>
+
     <h3 id="t_4">Árlista</h3>
     <p>Az alábbiakban összefoglaltuk a szolgáltatásaink típusait és díjait.</p>
     <table>
@@ -122,41 +140,59 @@ function changeContentToTurnToUs() {
     
     <div class="page-agenda">
     <a href="#mfh_1">&#9656; Milyen nehézségekkel kereshetnek bennünket?</a>
-    <a href="#mfh_2">&#9656; Amit nem tudunk vállalni!</a>
+    <a href="#mfh_2">&#9656; Mit nem tudunk vállalni?</a>
     </div>
     <hr/>
 
     <div class="content">
     <h3 id="mfh_1">Milyen nehézségekkel kereshetnek bennünket?</h3>
-    <ul>
-    <li>Tanulási/ magatartási/ beilleszkedési nehézség esetén
-    <li>Szorongásos panaszok esetén</li>
-    <li>Szomatikus panaszok esetén</li>
-    <li>Amikor az iskolaérettség kérdéses, illetve éretlenség miatt javasolt a további óvodai nevelés</li>
-    <li>Tic megjelenésekor</li>
-    <li>Figyelemzavar gyanújával</li>
-    <li>Hiperaktivitás/ ADHD gyanújával</li>
-    <li>Ha gyermeküknek mozgásfejlesztést javasoltak</li>
-    <li>Kiegészítő ellátásként Autizmus spektrumzavar esetén</li>
-    <li>Szelektív mutizmus esetén</li>
-    <li>Ha kérdéseik vannak gyermekük nevelését illetően</li>
-    <li>Ha kérdéseik vannak gyermekük fejlődése tekintetében (mozgásfejlettség, kognitív képességek
-    fejlődése-6 éves korig)</li>
-    </ul>
-    <h3 id="mfh_2">Amit nem tudunk vállalni</h3>
-    <img src="img/img05.jpg" style="width: 100%;">
     <p>
-    Vállalunk képességfelmérést, teszünk javaslatot, és véleményt is írunk a szülő kérésére (pl.:
-    iskolaérettségi vizsgálat), melyet a belátásuk szerint használhatnak. Továbbá kölcsönös igény esetén
-    vállalunk konzultálást a gyermek pedagógusaival. <b>Azonban a szakmai javaslataink a nevelési-
-    oktatási intézmények számára nem kötelező jellegűek.</b></p>
-    <p><b>Nem diagnosztizálunk (és gyógyszert sem tudunk felírni)</b>, ehelyett, amennyiben diagnosztizálásra
-    van szükség, igyekszünk a szülőt informálni, gyermeke érdekében a megfelelő ellátás
-    megtalálásában támogatni.</p>
-    <p>A gyermeküket külön nevelő szülők esetében a közös megállapodás alapján, és a szakmai
-    szempontok szerint vállalunk egyéni/ illetve közös konzultációt is. <b>Azonban gyermekelhelyezési
-    per esetén nem tudunk állást foglalni egyik fél pártján sem. Ilyen célú megkeresésnek nem
-    tudunk eleget tenni, a közös munkára nincs lehetőség.</b></p></div>
+    Sok család keres meg bennünket, amikor gyermekük fejlődésében, viselkedésében vagy
+    közösségi kapcsolataiban nehézségeket tapasztalnak. Gyakran az iskolai vagy óvodai
+    közösségben derülnek ki olyan jelzések, amelyek arra utalnak, hogy érdemes további
+    támogatást kérni.
+    </p>
+    <p>
+    A Dinamikus Szenzoros Integrációs Terápia (DSZIT) különösen hasznos lehet olyan
+    helyzetekben, amikor a gyermek:
+    </p>
+    <ul>
+    <li>nehezen tud alkalmazkodni a szabályokhoz,</li>
+    <li>figyelmét nehezen tartja fenn, vagy nyughatatlan, impulzív,</li>
+    <li>küzd az érzelmei szabályozásával (pl. gyakori indulati kitörések, szorongás),</li>
+    <li>nehezen illeszkedik be a közösségbe, vagy visszahúzódó a kortársai között,</li>
+    <li>tanulási, magatartási vagy beilleszkedési nehézségekkel küzd,</li>
+    <li>mozgásfejlesztést javasoltak számára, vagy fejlődésében eltérések figyelhetők meg,</li>
+    <li>autizmus spektrum zavarral él, és kiegészítő támogatásra van szüksége,</li>
+    <li>szelektív mutizmus esetén támogatást igényel,</li>
+    <li>kérdéses az iskolaérettsége, illetve további óvodai nevelést javasoltak.</li>
+    </ul>
+    <p>
+    Fordulhatnak hozzánk akkor is, ha szeretnék jobban megérteni gyermekük fejlődését, legyen
+    szó mozgásról, figyelemről, vagy a kognitív képességek alakulásáról. Konzultáció keretében
+    segítünk eligazodni a felmerülő kérdésekben, és támpontokat adunk a mindennapokhoz.
+    </p>
+
+    <h3 id="mfh_2">Mit nem tudunk vállalni?</h3>
+    <img src="img/img05.jpg" style="width: 100%;">
+    <p>Fontos számunkra, hogy a családok pontosan tudják, miben tudunk segíteni, és mi az, ami
+    nem a mi kompetenciánkba tartozik.</p>
+
+    <ul>
+    <li>Nem végzünk diagnosztikai vizsgálatokat, és nem állítunk fel pszichiátriai vagy
+neurológiai diagnózist. Amennyiben erre van szükség, segítünk a megfelelő
+szakellátás megtalálásában.</li>
+    <li>Nem írunk fel gyógyszereket. Ilyen esetben szakorvosi segítség szükséges.</li>
+    <li>Nem készítünk szakvéleményt jogi eljárásokhoz (például gyermekelhelyezési
+perekhez). Ilyen helyzetben nem tudunk egyik fél mellett sem állást foglalni.</li>
+    <li>Nem adunk kötelező érvényű szakmai utasításokat a gyermek intézményének (óvoda,
+iskola). Javaslatokat megfogalmazunk, és konzultációra is nyitottak vagyunk, de az
+intézmény döntése mindig saját hatáskörben történik.</li>
+    </ul>
+
+    <p>Ami viszont fontos: vállalunk képességfelmérést és javaslattételt, készítünk írásos véleményt
+szülői kérésre (pl. iskolaérettségi vizsgálathoz), és kölcsönös igény esetén konzultálunk a
+gyermek pedagógusaival is.</p></div>
     `
 }
 
@@ -204,6 +240,23 @@ function changeContentToAbility() {
     nem bírnak az oktatási rendszerben! Az iskolába lépés megkezdésének halasztását a szülőnek
     az <a href="https://ohtan.oh.gov.hu/" target="_blank">Oktatási Hivatalnál</a> szükséges kezdeményeznie, általában az adott év január közepéig van
     erre lehetőség.</p></div>`
+}
+
+function changeContentToIntKonz() {
+    const url = window.location.href
+    window.location.href =
+        url.indexOf("#") === -1 ? `${url}#integralt_szulo_csecsemo_konzultacio` : `${url.substring(0, url.indexOf("#"))}#integralt_szulo_csecsemo_konzultacio`;
+
+    document.getElementById("page").innerHTML = `
+    <h1>Integrált szülő-csecsemő konzultáció</h1>
+    <p style='margin-top:-2.4rem'>(Elek Ágnes Borbála)</p>
+    <p>A módszer azoknak a 3 év alatti gyermekeket nevelő családoknak kínál támogatást, akiknél
+alvási problémák, evési- etetési nehézség, illetve sok sírás, nehéz megnyugtathatóság
+jelentkezik. A konzultáció középpontjában a csecsemő/ kisgyermek viselkedése, fejlődése és
+a gyermek-szülő kapcsolat áll együttesen, így a konzultációs folyamat lehetőleg mindkét
+szülő, és a csecsemő/kisgyermek részvételével zajlik.</p>
+<p><b>További információ: <a href='https://www.iszcsk.com'>www.iszcsk.com</a></b></p>
+    `;
 }
 
 function changeContentToDSZIT() {
