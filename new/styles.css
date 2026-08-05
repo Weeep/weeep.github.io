@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+}
+:root {
+  --max-width: 1180px;
+  --green: #6fb03a; /* main brand green (adjust if needed) */
+  --green-dark: #5aa02f;
+  --dark: #1f1f1f;
+  --muted: #6b6b6b;
+  --accent: #f3f7f3;
+  --container-padding: 24px; /* default horizontal padding */
+}
+
+/* --------------------
+       Page container and utility
+       -------------------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* --------------------
+       Header
+       -------------------- */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.site-header .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0 0 0;
+}
+/* Important: reduce logo left/right spacing here if your CorinWeb template adds big padding
+       You can override CorinWeb's styles by targeting the wrapper class they provide (e.g. .header-logo).
+       Example override included at the bottom of this file. */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo img {
+  height: 64px; /*100px;*/
+  display: block;
+  object-fit: contain;
+}
+.site-title {
+  font-weight: 600;
+  /* font-size: 24px; */
+  letter-spacing: 0.6px;
+}
+.site-contact {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Navigation */
+nav.site-nav {
+  margin-top: 6px;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 12px 0;
+  margin: 0;
+}
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--dark);
+  padding: 8px 6px;
+  font-weight: 500;
+}
+.menu a:hover {
+  color: var(--green-dark);
+}
+
+/* --------------------
+       Hero (full-width with overlay)
+       -------------------- */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center 33%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 28, 28, 0.48) 0%,
+    rgba(28, 28, 28, 0.25) 45%,
+    rgba(28, 28, 28, 0.7) 100%
+  );
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+/* For fullHD layout: put hero text to the right */
+.hero-inner {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-content {
+  max-width: 680px;
+  color: #fff;
+  padding: 48px;
+  text-align: right;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(30px, 4.2vw, 56px);
+  line-height: 1.05;
+  font-weight: 700;
+}
+.hero p {
+  margin-top: 14px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 22px;
+  box-shadow: 0 6px 18px rgba(38, 95, 13, 0.12);
+}
+.btn:hover {
+  background: var(--green-dark);
+}
+
+/* --------------------
+       Sections: offerings / methods / team
+       -------------------- */
+section {
+  padding: 72px 0;
+}
+h2.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin: 0 0 26px;
+  font-weight: 700;
+}
+h3.section-subtitle {
+  text-align: center;
+  font-size: 22px;
+  margin: 0 0 14px;
+  font-weight: 700;
+}
+.lead {
+  text-align: center;
+  color: var(--muted);
+  max-width: 880px;
+  margin: 0 auto 40px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+.offer {
+  background: transparent;
+  padding: 18px;
+  text-align: center;
+}
+.offer .icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(111, 176, 58, 0.12);
+  margin-bottom: 18px;
+}
+.offer h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.offer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Team */
+.team-grid {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.team-card {
+  text-align: center;
+  max-width: 320px;
+}
+.team-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 12px;
+  display: block;
+}
+.team-pic-borbala {
+  width: 160px;
+  height: 160px;
+  background-image: url(assets/borbala.jpg);
+  background-size: cover;
+  /* border: 6px solid rgba(111, 176, 58, 0.14); */
+  border-radius: 50%;
+  margin: 0 auto 12px;
+}
+.team-card h4 {
+  margin: 6px 0 4px;
+}
+.team-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* --------------------
+       Footer
+       -------------------- */
+footer {
+  background: #fafafa;
+  padding: 28px 0;
+  border-top: 1px solid #eee;
+}
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.site-footer small {
+  color: var(--muted);
+}
+
+/* --------------------
+       Responsive breakpoints
+       -------------------- */
+@media (max-width: 1000px) {
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-inner {
+    justify-content: center;
+  }
+  .hero-content {
+    padding: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .menu {
+    gap: 14px;
+    overflow: auto;
+  }
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo img {
+    height: 58px;
+  }
+  .hero {
+    min-height: 420px;
+  }
+  .site-header .top {
+    padding: 12px 0;
+  }
+}
+
+/* --------------------
+       CorinWeb override example
+       -------------------- */
+/*
+      If CorinWeb applies a large left/right padding around the header/logo, add this CSS to the
+      "Egyedi CSS" or "Custom styles" field in CorinWeb. Adjust the selectors below to match the
+      wrapper your Corin template uses (common ones: .header-logo, .site-branding, .topbar .logo):
+
+      .header-logo, .site-branding { padding-left: 8px !important; padding-right: 8px !important; }
+      .header-logo img, .site-branding img, .logo img { max-height: 64px !important; padding: 0 !important; }
+
+      This will reduce the visual gap to the left/right of the logo without changing the template
+      structure.
+    */

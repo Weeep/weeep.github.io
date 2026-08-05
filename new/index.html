@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bontakozó Tanácsadó Műhely</title>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Dinamikus, játékos támogatás óvodás- és kisiskolás korú gyerekeknek — Bontakozó Tanácsadó Műhely, Eger"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <div class="top">
+          <div class="logo">
+            <!-- Replace with your logo file in assets/logo.png -->
+            <img src="assets/logo.jpg" alt="Bontakozó Tanácsadó Műhely logó" />
+            <div>
+              <div class="site-title">
+                Bontakozó
+                <span
+                  style="
+                    display: block;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: var(--muted);
+                  "
+                  >Tanácsadó Műhely - Eger</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="site-contact visually-hidden">
+            <!-- Optional contact at top-right; hide on small screens -->
+            bontakozomuhely@gmail.com
+          </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Fő navigáció">
+          <ul class="menu" role="menubar">
+            <li role="none">
+              <a role="menuitem" href="#bemutatkozas">Bemutatkozás</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#mivel">Mivel fordulhatnak hozzánk?</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#modszereink">Módszereink</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#modszerek">Tudnivalók</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#kapcsolat">Kapcsolat</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="hero"
+      style="background-image: url('assets/hero.jpg')"
+      aria-hidden="false"
+    >
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <h1>Játékosan segítjük a gyerekek fejlődését</h1>
+            <p>
+              Óvodás- és kisiskoláskorú gyermekek számára kínálunk Dinamikus
+              Szenzoros Integrációs Terápiás szemléletű ellátást (DSZIT), egyéni
+              és kiscsoportos formában, pszichológus vezetésével.
+            </p>
+            <a class="btn" href="#kapcsolat">Kapcsolatfelvétel</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MIT KINÁLUNK -->
+    <section id="mivel">
+      <div class="container">
+        <h2 class="section-title">Mivel fordulhatnak hozzánk?</h2>
+        <p class="lead">
+          Olyan családokat támogatunk, akik gyermekük fejlődésében,
+          viselkedésében vagy beilleszkedésében nehézségeket tapasztalnak, és
+          szeretnék jobban megérteni, hogyan segíthetik őt a mindennapokban.
+          <a href="mivel-fordulhatnak-hozzank.html">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- hosszabb szár -->
+              <path
+                d="M4 18H20"
+                stroke="var(--green)"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <!-- jobbra mutató nyílfej, lejjebb helyezve -->
+              <path
+                d="M15 13L20 18L15 23"
+                stroke="var(--green)"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </p>
+      </div>
+
+      <h3 class="section-subtitle">Szakembereink</h3>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-pic-borbala" alt="Elek Ágnes Borbála"></div>
+          <h4>Elek Ágnes Borbála</h4>
+          <p>
+            Tanácsadó szakpszichológus, integrált szülő- csecsemő/ kisgyermek
+            konzulens
+          </p>
+        </div>
+
+        <div class="team-card">
+          <img
+            class="team-pic"
+            src="assets/team/agnes2.jpg"
+            alt="Váczy-Herman Ágnes"
+          />
+          <h4>Váczy-Herman Ágnes</h4>
+          <p>pedagógiai szakpszichológus, DSZIT-terapeuta</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÓDSZERÜNK -->
+    <section id="modszereink">
+      <div class="container">
+        <h2 class="section-title">Módszereink</h2>
+        <p class="lead">
+          Célunk, hogy játék és mozgás közben támogassuk a gyerekek
+          idegrendszeri érését, önszabályozását és harmonikus fejlődését.
+        </p>
+
+        <div class="offer-grid">
+          <article class="offer" aria-labelledby="offer1">
+            <div class="icon" aria-hidden>
+              <img
+                src="assets/ikon_hinta.png"
+                alt="DSZIT"
+                width="92"
+                height="92"
+              />
+            </div>
+            <h3 id="offer1">DSZIT szemléletű foglalkozás</h3>
+            <p>
+              Játékos mozgáson keresztül támogatjuk az idegrendszer érését és a
+              gyermek harmonikus fejlődését.
+              <span id="arrow-dszit"></span>
+            </p>
+          </article>
+
+          <article class="offer" aria-labelledby="offer2">
+            <div class="icon" aria-hidden>
+              <img
+                src="assets/ikon_kepesseg.png"
+                alt="kepesseg"
+                width="82"
+                height="82"
+              />
+            </div>
+            <h3 id="offer2">Képességfelmérések</h3>
+            <p>
+              SEED Fejlődési Skála és Iskolaérettségi vizsgálat
+              <span id="arrow-kepessegfelmeres"></span>
+            </p>
+          </article>
+
+          <article class="offer" aria-labelledby="offer3">
+            <div class="icon" aria-hidden>
+              <img
+                src="assets/ikon_szulo_csecsemo.png"
+                alt="kepesseg"
+                width="82"
+                height="82"
+              />
+            </div>
+            <h3 id="offer3">Integrált szülő-csecsemő konzultáció</h3>
+            <p>
+              Korai szülő-gyermek kapcsolat támogatása.
+              <span id="arrow-terapia"></span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SZAKEMBEREINK -->
+    <section>
+      <div class="container"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container site-footer">
+        <small
+          >&copy; 2023 Bontakozó Tanácsadó Műhely — Minden jog
+          fenntartva.</small
+        >
+        <div>
+          <a
+            href="#kapcsolat"
+            style="text-decoration: none; color: var(--muted)"
+            >Kapcsolat</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <!--
+  /project-root
+  ├─ index.html                       # a fenti fájl
+  ├─ assets/
+  │  ├─ logo.png                      # logo (PNG/SVG)
+  │  ├─ hero.jpg                      # hős-kép a fejléchez
+  │  ├─ team/
+  │  │  ├─ agnes1.jpg
+  │  │  └─ agnes2.jpg
+  │  └─ icons/                        # ha külön svg ikonokat használsz
+  ├─ css/
+  │  └─ styles.css                    # (opcionális: ha szeretnéd különválasztani)
+  ├─ js/
+  │  └─ main.js                       # (opcionális: külön JS fájl)
+  ├─ data/
+  │  └─ team.json                     # strukturált tartalom (név, pozíció, kép útvonal)
+  └─ products/                        # ha a weboldal része a termékek/anyagok könyvtára
+     ├─ product-001/
+     │  ├─ index.html
+     │  ├─ images/
+     │  └─ data.json
+     └─ product-002/
+
+  --></body>
+</html>
