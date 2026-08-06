@@ -919,6 +919,10 @@ a {
     var(--color-cream);
 }
 
+.detail-page [id] {
+  scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
 .detail-hero {
   padding-top: clamp(52px, 8vw, 96px);
   padding-bottom: clamp(44px, 7vw, 84px);
