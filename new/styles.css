@@ -1046,10 +1046,6 @@ a {
   text-align: left;
 }
 
-.mobile-cta {
-  display: none;
-}
-
 .article-card th {
   background: var(--color-mint);
   color: var(--color-sage-dark);
@@ -1212,67 +1208,46 @@ a {
     gap: 0;
   }
 
-  .timeline-table tr:nth-child(odd) {
+  .timeline-table .timeline-entry {
     margin-top: 16px;
     overflow: hidden;
     border: 1px solid rgba(54, 92, 69, 0.18);
+    border-radius: var(--radius-md);
+  }
+
+  .timeline-table .timeline-entry.has-details {
     border-radius: var(--radius-md) var(--radius-md) 0 0;
   }
 
-  .timeline-table tr:nth-child(odd) th,
-  .timeline-table tr:nth-child(odd) td {
+  .timeline-table .timeline-entry th,
+  .timeline-table .timeline-entry td {
     border: 0;
   }
 
-  .timeline-table tr:nth-child(even) {
+  .timeline-table .timeline-entry th {
+    width: 100%;
+  }
+
+  .timeline-table .timeline-details {
     border: 1px solid rgba(54, 92, 69, 0.18);
     border-top: 0;
     border-radius: 0 0 var(--radius-md) var(--radius-md);
   }
 
-  .timeline-table tr:nth-child(even) td:first-child,
-  .timeline-table tr:nth-child(even):not(:has(td:nth-child(2))) {
+  .timeline-table .timeline-details td:first-child,
+  .timeline-table .timeline-details.is-empty {
     display: none;
   }
 
-  .timeline-table tr:nth-child(even) td {
+  .timeline-table .timeline-details td {
     border: 0;
     padding-top: 0;
   }
 }
 
 @media (max-width: 620px) {
-  body {
-    padding-bottom: 76px;
-  }
-
   .article-card {
     padding-inline: 18px;
-  }
-
-  .mobile-cta {
-    position: fixed;
-    z-index: 45;
-    right: 12px;
-    bottom: max(12px, env(safe-area-inset-bottom));
-    left: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 52px;
-    border-radius: 999px;
-    background: var(--color-sage-dark);
-    color: var(--color-white);
-    box-shadow: 0 12px 30px rgba(36, 51, 43, 0.28);
-    font-weight: 900;
-    text-decoration: none;
-    transition: opacity 160ms ease, transform 160ms ease;
-  }
-
-  .mobile-cta.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(16px);
   }
 }
 

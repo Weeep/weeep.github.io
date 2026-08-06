@@ -68,14 +68,3 @@ if (menuToggle && siteNav) {
     if (event.matches) closeMenu();
   });
 }
-
-const mobileCta = document.querySelector("[data-mobile-cta]");
-const contactSection = document.querySelector("#jelentkezes");
-
-if (mobileCta && contactSection && "IntersectionObserver" in window) {
-  const contactObserver = new IntersectionObserver(
-    ([entry]) => mobileCta.classList.toggle("is-hidden", entry.isIntersecting),
-    { threshold: 0.08 },
-  );
-  contactObserver.observe(contactSection);
-}
