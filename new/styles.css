@@ -613,6 +613,8 @@ a {
 }
 
 .price-grid article {
+  display: flex;
+  flex-direction: column;
   padding: 24px;
   text-align: center;
 }
@@ -622,10 +624,27 @@ a {
 }
 
 .price-grid strong {
-  display: block;
-  margin-top: 14px;
   color: var(--color-sage-dark);
   font-size: 1.28rem;
+}
+
+.price-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  text-align: left;
+}
+
+.price-meta strong {
+  white-space: nowrap;
+}
+
+.section-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
 }
 
 .note-card {
@@ -878,6 +897,11 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .price-meta {
+    align-items: center;
+    flex-direction: column;
+  }
+
   .team-card {
     grid-template-columns: 1fr;
     text-align: center;
@@ -900,12 +924,18 @@ a {
   padding-bottom: clamp(44px, 7vw, 84px);
 }
 
+.detail-top-layout,
 .detail-hero-grid,
 .article-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.72fr) minmax(280px, 0.28fr);
   gap: clamp(28px, 5vw, 56px);
   align-items: start;
+}
+
+.detail-top-layout,
+.article-layout {
+  grid-template-columns: 260px minmax(0, 1fr);
 }
 
 .detail-hero-grid {
@@ -957,7 +987,7 @@ a {
 }
 
 .more-methods strong {
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: inherit;
   color: var(--color-ink);
 }
 
@@ -1019,6 +1049,7 @@ a {
 }
 
 @media (max-width: 860px) {
+  .detail-top-layout,
   .detail-hero-grid,
   .article-layout,
   .check-grid,
@@ -1028,6 +1059,14 @@ a {
 
   .toc-card {
     position: static;
+  }
+
+  .detail-intro {
+    order: -1;
+  }
+
+  .toc-spacer {
+    display: none;
   }
 
   .price-table b {
