@@ -9,17 +9,15 @@ if (menuToggle && siteNav) {
 
     menuToggle.setAttribute("aria-expanded", "false");
     siteNav.classList.remove("is-open");
-    document.body.classList.remove("menu-open");
     if (menuLabel) menuLabel.textContent = "Menü megnyitása";
-    if (returnFocus && wasOpen) menuToggle.focus();
+    if (returnFocus && wasOpen) menuToggle.focus({ preventScroll: true });
   };
 
   const openMenu = () => {
     menuToggle.setAttribute("aria-expanded", "true");
     siteNav.classList.add("is-open");
-    document.body.classList.add("menu-open");
     if (menuLabel) menuLabel.textContent = "Menü bezárása";
-    siteNav.querySelector("a")?.focus();
+    siteNav.querySelector("a")?.focus({ preventScroll: true });
   };
 
   menuToggle.addEventListener("click", () => {

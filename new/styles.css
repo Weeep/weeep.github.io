@@ -46,10 +46,6 @@ body {
   overflow-wrap: break-word;
 }
 
-body.menu-open {
-  overflow: hidden;
-}
-
 img,
 svg,
 iframe {
