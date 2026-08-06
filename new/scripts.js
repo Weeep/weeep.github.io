@@ -1,10 +1,5 @@
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const siteNav = document.querySelector("[data-site-nav]");
-const year = document.querySelector("[data-year]");
-
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
